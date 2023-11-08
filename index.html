@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/creation.css" />
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui-timepicker-addon.min.css">
+    <link rel="stylesheet" href="assets/css/highlight-js.css">
+    <link rel="stylesheet" href="assets/css/atom-one-light.min.css">
+
+</head>
+
+<body data-view="home" class="webkit isBoarding">
+    <div class="container collapsed hasSidebar">
+        <div class="menu">
+            <a href="#">
+                <div class="menuOption logo">
+                    <svg version="1.1" id="beamer-logo" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="42px"
+                        viewBox="0 0 160 42" enable-background="new 0 0 160 42" xml:space="preserve">
+                        <g id="logo-wordmark">
+                            <path id="logo-b" fill="#FFFFFF" d="M49.872,10.82v7.392c0.741-1.381,2.953-2.139,4.361-2.139c3.898,0,6.782,2.382,6.782,6.986
+                            c0,4.387-2.958,6.984-6.884,6.984c-1.624,0-3.279-0.525-4.308-2.122l-0.22,1.855h-3.138V10.82H49.872z M50.036,23.059
+                            c0,2.41,1.787,3.927,3.873,3.927c2.112,0,3.791-1.599,3.791-3.927c0-2.41-1.679-3.898-3.791-3.898
+                            C51.823,19.16,50.036,20.729,50.036,23.059z" />
+                            <path id="logo-e_1_" fill="#FFFFFF"
+                                d="M66.255,24.296c0.216,1.63,1.651,2.82,3.98,2.82c1.218,0,2.817-0.473,3.575-1.257
+                            l2.111,2.079c-1.408,1.462-3.71,2.163-5.741,2.163c-4.603,0-7.338-2.845-7.338-7.123c0-4.062,2.762-6.962,7.094-6.962
+                            c4.469,0,7.256,2.801,6.743,8.28H66.255z M73.513,21.482c-0.217-1.63-1.571-2.6-3.467-2.6c-1.787,0-3.249,0.97-3.737,2.6H73.513z" />
+                            <path id="logo-a" fill="#FFFFFF"
+                                d="M89.814,16.447h3.152v13.329h-3.102l-0.16-1.966c-0.762,1.571-2.844,2.322-4.334,2.35
+                            c-3.953,0.027-6.877-2.413-6.877-7.098c0-4.604,3.059-7.016,6.957-6.988c1.787,0,3.492,0.862,4.254,2.191L89.814,16.447z
+                                M81.758,23.059c0,2.545,1.73,4.062,3.953,4.062c5.184,0,5.184-8.097,0-8.097C83.488,19.023,81.758,20.514,81.758,23.059z" />
+                            <path id="logo-m" fill="#FFFFFF" d="M104.668,29.776v-7.178c0-1.761-0.947-3.358-2.76-3.358c-1.787,0-2.867,1.597-2.867,3.358
+                            v7.178h-3.26V16.299h3.047l0.244,1.661c0.703-1.354,2.248-1.823,3.52-1.823c1.598,0,3.193,0.658,3.953,2.499
+                            c1.191-1.895,2.73-2.432,4.465-2.432c3.789,0,5.654,2.333,5.654,6.34v7.232h-3.26v-7.232c0-1.76-0.76-3.249-2.551-3.249
+                            c-1.787,0-2.928,1.542-2.928,3.303v7.178H104.668z" />
+                            <path id="logo-e" fill="#FFFFFF"
+                                d="M122.846,24.296c0.215,1.63,1.652,2.82,3.979,2.82c1.221,0,2.818-0.473,3.574-1.257
+                            l2.111,2.079c-1.406,1.462-3.709,2.163-5.74,2.163c-4.6,0-7.336-2.845-7.336-7.123c0-4.062,2.762-6.962,7.096-6.962
+                            c4.465,0,7.256,2.801,6.74,8.28H122.846z M130.102,21.482c-0.215-1.63-1.57-2.6-3.467-2.6c-1.787,0-3.248,0.97-3.734,2.6H130.102z" />
+                            <path id="logo-r" fill="#FFFFFF" d="M138.875,16.447l0.242,1.518c1.029-1.651,2.41-1.907,3.764-1.907
+                            c1.381,0,2.711,0.535,3.441,1.266l-1.49,2.866c-0.676-0.568-1.271-0.868-2.354-0.868c-1.736,0-3.303,0.919-3.303,3.383v7.07h-3.406
+                            V16.447H138.875z" />
+                            <path id="logo-dot" fill="#FFFFFF" d="M151.383,27.999c0,2.666-3.898,2.666-3.898,0C147.484,25.481,151.383,25.481,151.383,27.999z
+                            " />
+                        </g>
+                        <g id="logo-iso">
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M3.588,34.618c-1.017,0-1.981-0.598-2.393-1.591c-0.544-1.311,0.086-2.812,1.407-3.353l30.229-12.364
+                                c1.32-0.539,2.833,0.086,3.376,1.398c0.543,1.312-0.086,2.813-1.407,3.354L4.572,34.425C4.25,34.556,3.916,34.618,3.588,34.618z" />
+                            </g>
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M3.588,24.825c-1.017,0-1.981-0.599-2.393-1.591c-0.544-1.312,0.086-2.813,1.407-3.354L32.832,7.519
+                                c1.32-0.541,2.833,0.084,3.376,1.396c0.543,1.312-0.086,2.813-1.407,3.354L4.572,24.63C4.25,24.764,3.916,24.825,3.588,24.825z" />
+                            </g>
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M3.588,14.709c-1.021,0-1.989-0.603-2.397-1.6c-0.538-1.315,0.099-2.813,1.421-3.347l18.543-7.491
+                                c1.324-0.533,2.832,0.099,3.37,1.413c0.539,1.313-0.098,2.812-1.421,3.347L4.561,14.52C4.242,14.649,3.913,14.709,3.588,14.709z" />
+                            </g>
+                            <g>
+                                <path fill="#FFFFFF" d="M15.227,39.918c-1.021,0-1.989-0.604-2.396-1.602c-0.539-1.314,0.098-2.814,1.421-3.35l18.543-7.488
+                                c1.324-0.533,2.833,0.099,3.371,1.412c0.538,1.315-0.099,2.813-1.421,3.347l-18.544,7.491
+                                C15.881,39.856,15.551,39.918,15.227,39.918z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+            <a href="#" class="tooltippable" data-tooltip-title="Notifications" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <div class="menuOption home active">
+                    <i class="material-icons">dashboard</i>
+                    <span>Notifications</span>
+                </div>
+            </a>
+
+
+            <a class="tooltippable" data-tooltip-title="Beamer Feedback" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1" data-enabled="false">
+                <div class="menuOption">
+                    <i class=" material-icons">explore</i>
+                    <span>Beamer Feedback</span>
+                    <div class="beta">beta</div>
+                </div>
+            </a>
+
+
+            <a href="#" class="tooltippable" data-tooltip-title="NPS" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <div class="menuOption ">
+                    <i class="material-icons">bubble_chart</i>
+                    <span>NPS</span>
+                </div>
+            </a>
+
+
+            <a href="#" class="tooltippable" data-tooltip-title="Inbox" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1" data-enabled="false">
+                <div class="menuOption ">
+                    <i class="material-icons">inbox</i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+
+
+
+            <a href="#" class="tooltippable" data-tooltip-title="Users" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <div class="menuOption ">
+                    <i class="material-icons">contacts</i>
+                    <span>Users</span>
+                </div>
+            </a>
+
+
+            <a href="#" class="tooltippable" data-tooltip-title="Analytics" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <div class="menuOption ">
+                    <i class="material-icons">insert_chart</i>
+                    <span>Analytics</span>
+                </div>
+            </a>
+
+            <div class="user">
+                <a class="tooltippable" data-tooltip-title="Updates" data-tooltip-placement="right"
+                    data-tooltip-container=".container.collapsed" data-tooltip-delay="1" id="beamerFeatures">
+                    <div class="menuOption">
+                        <i class="material-icons">notifications</i>
+                        <span>Updates</span>
+                    </div>
+                </a>
+
+                <a href="#" class="tooltippable" data-tooltip-title="Upgrade"
+                    data-tooltip-placement="right" data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                    <div class="menuOption">
+                        <i class="material-icons">star</i>
+                        <span>Upgrade</span>
+                    </div>
+                </a>
+
+
+                <a href="#" class="tooltippable" data-tooltip-title="Integrations"
+                    data-tooltip-placement="right" data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                    <div class="menuOption ">
+                        <i class="material-icons">extension</i>
+                        <span>Integrations</span>
+                    </div>
+                </a>
+
+                <a href="#" class="tooltippable" data-tooltip-title="Settings" data-tooltip-placement="right"
+                    data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                    <div class="menuOption ">
+                        <i class="material-icons">settings</i>
+                        <span>Settings</span>
+                    </div>
+                </a>
+                <div class="account">
+                    <div class="accountName">
+                        <!-- <img src="" alt="userimage" /> -->
+                        <div>User</div>
+                    </div>
+                    <div class="accountSwitch">
+                        <i class="material-icons">chevron_right</i>
+                    </div>
+                </div>
+
+
+                <div class="menuCard">
+                    <div class="userinfo">
+                        <div class="avatar">
+                            <!-- <img src="" alt="userimage" /> -->
+                        </div>
+                        <div class="data">
+                            <span class="name">
+                                User
+                            </span>
+                            <span class="status">
+                                Administrator
+                            </span>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <img class="js-initial" data-name="Thaddeus Cain" data-height="30" data-width="30"
+                            data-font-size="13" />
+                        <div class="data">
+                            <span class="name">
+                                Thaddeus Cain
+                                <div class="subtitle">
+                                    Switch or create account
+                                </div>
+                            </span>
+                        </div>
+                        <i class="material-icons">chevron_right</i>
+                        <div class="workspace">
+                            <ul class="options">
+                                <li class="action" data-action="back">
+                                    Back
+                                </li>
+                                <li class="option current tooltippable  hasDescription"
+                                    data-tooltip-title="Thaddeus Cain - https://www.zidumor.com.au"
+                                    data-tooltip-placement="right" data-tooltip-container=".container.collapsed"
+                                    data-tooltip-delay="1">
+                                    <img class="js-initial" data-name="Thaddeus Cain" data-height="30" data-width="30"
+                                        data-font-size="13" />
+                                    <div class="productName">
+                                        Thaddeus Cain
+                                    </div>
+
+                                    <div class="productDescription">
+                                        https://www.zidumor.com.au
+                                    </div>
+
+                                </li>
+
+
+
+                                <li class="action" data-action="create-new" data-id="59670">
+                                    <i class="material-icons">add</i> Create new account
+                                </li>
+                                <li class="action" data-action="merge">
+                                    <i class="material-icons">call_merge</i> Merge accounts
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons">settings</i> Settings
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons">code</i> Embed code
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons">payment</i> Billing
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons">extension</i> Integrations
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons">power</i> API
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons">lock</i> Privacy
+                                </a>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="nav docs">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    API Docs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav actions">
+                        <ul>
+                            <li>
+                                <a class="action close" data-action="close">
+                                    <i class="material-icons">close</i>
+                                    <span>Close</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="action" data-action="logout">
+                                    <i class="material-icons">power_settings_new</i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="contentHeader">
+
+                <div class="mobileMenu">
+                    <i class="material-icons">menu</i>
+                    <i class="material-icons">arrow_back_ios</i>
+                </div>
+                <div class="contentTitle">
+                    Notifications
+                    <div class="productCode">
+                        <span class="name">
+                            ID:
+                        </span>
+                        <span class="code">VDqCJTzu59670</span>
+                    </div>
+                </div>
+                <div class="vistaTitle" data-content="all">
+                    All
+                </div>
+                <div class="contentPlan">
+                    <div class="contentPlanUsers tooltippable tooltipped"
+                        data-tooltip-html="Number of <b> monthly visitors </b> who are exposed to Beamer in your product. <a href='#' target='_blank'>Click here</a> for more information."
+                        data-tooltip-placement="bottom" data-tooltip-container=".container.collapsed"
+                        data-tooltip-delay="1">
+                        0/1,000 users
+                    </div>
+                    <span class="separator">-</span>
+                    Beamer Free
+                    <span class="separator">-</span>
+                    <a href="#" target="_blank">Upgrade</a>
+                </div>
+                <div class="npsContentPlan">
+                    NPS Free
+                    <span class="separator">-</span>
+                    <a href="#" target="_blank">Upgrade</a>
+                    <span class="firstDayOfNextMonth">Next reset: 1st</span>
+                </div>
+                <a href="#" class="button primary addLink createLink" title="Create a new post">
+                    <i class="material-icons">add</i><span>Create post</span>
+                </a>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebarContent">
+                    <ul class="sidebarList">
+                        <li class="sidebarListElement hasSublist" data-option="notifications" onclick="toggleOpen(this)">
+                            <div class="sidebarListElementLabel">
+                                <i class="material-icons">list</i> <span
+                                    class="sidebarListElementLabelText">Notifications</span> <span
+                                    class="sidebarSubListOpener"><i class="material-icons closed">chevron_right</i><i
+                                        class="material-icons open">expand_more</i></span>
+                            </div>
+                            <ul class="sidebarSubList">
+                                <li class="sidebarSubListElement selected" data-option="all" data-name="All"
+                                    data-route="posts">
+                                    All
+                                </li>
+                                <li class="sidebarSubListElement" data-option="published" data-name="Published"
+                                    data-route="posts?published=true">
+                                    Published
+                                </li>
+                                <li class="sidebarSubListElement" data-option="draft" data-name="Draft"
+                                    data-route="posts?draft=true">
+                                    Draft
+                                </li>
+                                <li class="sidebarSubListElement" data-option="single-user" data-name="Single-user"
+                                    data-route="posts?filterByUser=true">
+                                    Single-user
+                                </li>
+                                <li class="sidebarSubListElement" data-option="expired" data-name="Expired"
+                                    data-route="posts?expired=true">
+                                    Expired
+                                </li>
+                                <li class="sidebarSubListElement" data-option="archived" data-name="Archived"
+                                    data-route="posts?archived=true">
+                                    Archived
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebarSeparator"></li>
+                        <li class="sidebarListElement" data-option="preview" data-name="Preview">
+                            <i class="material-icons">visibility</i> <span
+                                class="sidebarListElementLabelText">Preview</span>
+                        </li>
+
+                        <li class="sidebarListElement">
+                            <a href="#">
+                                <i class="material-icons">web</i> <span class="sidebarListElementLabelText">Standalone
+                                    page</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebarListElement" data-option="embed" data-name="Embed code">
+                            <i class="material-icons">code</i> <span class="sidebarListElementLabelText">Embed
+                                code</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="feature checklist">
+                    <div class="checklist-step done" data-step="0">
+                        <div class="checklist-mark">
+                            <i class="material-icons">done</i>
+                        </div>
+                        <div class="checklist-title">
+                            Account Created
+                        </div>
+                        <div class="checklist-instructions">
+                            <p>You are almost ready to start using Beamer! Please follow these steps.</p>
+                        </div>
+                        <div class="checklist-progress">
+                            <div class="checklist-progress-bar" data-step="0"></div>
+                            <div class="checklist-progress-number">25%</div>
+                        </div>
+                    </div>
+                    <div class="checklist-step active" data-step="1">
+                        <div class="checklist-mark">
+                            <i class="material-icons">done</i>
+                            <span>1</span>
+                        </div>
+                        <div class="checklist-title">
+                            Write your first post
+                        </div>
+                        <div class="checklist-content">
+                            <div class="checklist-instructions">
+                                <p>Prepare content for your new audience.</p>
+                            </div>
+                            <div class="checklist-actions">
+                                <a href="#" class="button primary" title="Create a new post">
+                                    Click here to create your first post
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checklist-step" id="guide-step" data-step="2">
+                        <div class="checklist-mark">
+                            <i class="material-icons">done</i>
+                            <span>2</span>
+                        </div>
+                        <div class="checklist-title">
+                            Choose where to show Beamer
+                        </div>
+                        <div class="checklist-content">
+                            <div class="checklist-instructions">
+                                <p>Where are you going to display your new Beamer feed?</p>
+                            </div>
+                            <div class="checklist-actions">
+                                <div class="button secondary">
+                                    Install on HTML website
+                                </div>
+                                <div class="button secondary">
+                                    Install on Wordpress
+                                </div>
+                                <div class="button secondary">
+                                    Install on other platforms
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checklist-step" data-step="3">
+                        <div class="checklist-mark">
+                            <i class="material-icons">done</i>
+                            <span>3</span>
+                        </div>
+                        <div class="checklist-title">
+                            Install Beamer on your site
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/scroll.jquery.js"></script>
+<script src="assets/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="assets/js/jquery-ui-timepicker-addon.min.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/leads.js"></script>
+<script src="assets/js/filtersAutocomplete.js"></script>
+<script src="assets/js/routie.min.js"></script>
+<script src="assets/js/emoji.js"></script>
+<script src="assets/js/home.js"></script>
+<script src="assets/js/initial.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/audit.js"></script>
+<script src="assets/js/tooltip.js"></script>
+<script src="assets/js/tooltipUtils.js"></script>
+<script src="assets/js/md5.min.js"></script>
+
+<script>
+    function toggleOpen(element) {
+  element.classList.toggle('open');
+}
+</script>
+
+</html>
