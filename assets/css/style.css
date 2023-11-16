@@ -344,7 +344,7 @@ table {
 
 a {
     text-decoration: none;
-    color: #3d50e0
+    color: #1c4e80
 }
 
 a:hover {
@@ -361,7 +361,7 @@ a:hover {
 }
 
 .menu {
-    background-color: #293240;
+    background-color: #1C4E80;
     color: #d2d2d2;
     overflow: scroll;
     padding: 68px 0 116px;
@@ -387,7 +387,7 @@ a:hover {
 }
 
 .menu>a:hover {
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .menu>a,.menu>a * {
@@ -411,7 +411,7 @@ a:hover {
 }
 
 .logo {
-    background-color: #373f4c;
+    background-color: #1C4E80;
     padding: 15px 10px!important;
     padding-top: 16px;
     display: block;
@@ -461,8 +461,8 @@ a:hover {
 }
 
 .menuOption.active,.menuOption:hover {
-    color: #fff!important;
-    color: #3d50e0;
+    color: #1c4e80!important;
+    /* color: #1c4e80; */
     cursor: pointer;
     text-decoration: underline;
     -webkit-transition: background-color .25s ease;
@@ -471,7 +471,8 @@ a:hover {
 }
 
 .menuOption.active {
-    background-color: rgba(137,155,167,.6)
+    /* background-color: rgba(137,155,167,.6); */
+    background-color: rgb(210 220 230);
 }
 
 .menuOption.active:after {
@@ -1306,7 +1307,7 @@ body.embed.hasModes[data-mode=roadmap] .news {
 .featureAction svg {
     position: relative;
     top: 2px;
-    fill: #3d50e0;
+    fill: #1c4e80;
     width: 22px;
     height: 22px;
     left: 0;
@@ -1316,7 +1317,7 @@ body.embed.hasModes[data-mode=roadmap] .news {
 }
 
 .featureActionLink {
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .featureActionLink a {
@@ -1326,7 +1327,7 @@ body.embed.hasModes[data-mode=roadmap] .news {
 .featureActionLink svg {
     position: relative;
     top: 7px;
-    fill: #3d50e0;
+    fill: #1c4e80;
     width: 22px;
     height: 22px
 }
@@ -1528,7 +1529,7 @@ body.embed.hasModes[data-mode=roadmap] .news {
 }
 
 .featureRequestsPrompt .promptContent .promptContentText {
-    color: #3d50e0;
+    color: #1c4e80;
     font-size: 15px
 }
 
@@ -1790,8 +1791,8 @@ ol.embedDesc li {
 .button:hover,.button:active,.button:focus,.button.loading,button:hover,button:active,button:focus,button.loading {
     cursor: pointer;
     text-decoration: none!important;
-    color: #3d50e0;
-    border: 2px solid #3d50e0
+    color: #1c4e80;
+    border: 2px solid #1c4e80;
 }
 
 .button.disabled:hover,.button:disabled:hover,button.disabled:hover,button:disabled:hover,.button.disabled:active,.button:disabled:active,button.disabled:active,button:disabled:active,.button.disabled:focus,.button:disabled:focus,button.disabled:focus,button:disabled:focus {
@@ -1810,15 +1811,15 @@ ol.embedDesc li {
 }
 
 .button.primary,button.primary {
-    background: #1c1e21;
-    border-color: #1c1e21;
+    background: #1c4e80;
+    border-color: #1c4e80;
     color: #fff
 }
 
 .button.primary:hover,.button.primary:active,.button.primary:focus,.button.primary.loading,button.primary:hover,button.primary:active,button.primary:focus,button.primary.loading {
-    background: #3d50e0;
-    border-color: #3d50e0;
-    color: #fff
+    background: #d2dce6;
+    border-color: #d2dce6;
+    color: #1c4e80;
 }
 
 .button.primary.disabled,.button.primary:disabled,button.primary.disabled,button.primary:disabled {
@@ -1845,7 +1846,7 @@ ol.embedDesc li {
 }
 
 .button.secondary:hover,.button.secondary:active,.button.secondary:focus,button.secondary:hover,button.secondary:active,button.secondary:focus,.button.secondary.loading,button.secondary.loading {
-    border: 2px solid #3d50e0
+    border: 2px solid #1c4e80;
 }
 
 .button.secondary.warning:hover,.button.secondary.warning:active,.button.secondary.warning:focus,button.secondary.warning:hover,button.secondary.warning:active,button.secondary.warning:focus,.button.secondary.warning.loading,button.secondary.warning.loading {
@@ -1865,7 +1866,7 @@ ol.embedDesc li {
 }
 
 .button.tertiary:hover,.button.tertiary:focus,.button.tertiary:active,button.tertiary:hover,button.tertiary:focus,button.tertiary:active,button.tertiary.loading,.button.tertiary.loading {
-    border-color: #3d50e0
+    border-color: #1c4e80;
 }
 
 .button.tertiary.warning:hover,.button.tertiary.warning:focus,.button.tertiary.warning:active,button.tertiary.warning:hover,button.tertiary.warning:focus,button.tertiary.warning:active,.button.tertiary.warning.loading,button.tertiary.warning.loading {
@@ -1890,8 +1891,8 @@ ol.embedDesc li {
 }
 
 .button.toggable:focus,.button.toggable:active,.button.toggable.active {
-    border-color: #3d50e0;
-    color: #3d50e0
+    border-color: #1c4e80;
+    color: #1c4e80
 }
 
 .button.prompted {
@@ -1943,8 +1944,8 @@ ol.embedDesc li {
 }
 
 .button.drop:focus,.button.drop:active,.button.drop.active,.button.drop.active:hover {
-    border-color: #3d50e0;
-    color: #3d50e0;
+    border-color: #1c4e80;
+    color: #1c4e80;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAoCAIAAABmcd1FAAAACXBIWXMAAAsSAAALEgHS3X78AAAA0ElEQVRIiWP8//8/A20AE43MHTV61OhRo0eNHuFGT5733i7w4fZ9X3Ap3b7vi13gw8nz3pNsNAS0T357+OQ3THWHT35rn/yWeCejGJ2bJKiiyAYx/c79X8iK7tz/BTFXRZEtN0mQHFdPahZXUWT78vVfXu1LuOl37v/Kq3355es/FUW2Sc3ixLsavW6Em8vDzQQxCNlcHm4SEiuWahfZdAiXDHOxG41sOiR8yTAXp9Fw0798/TevT5IMc/EZTTkYLUNGjR41etToUaOpBRgYGAAsI3HZnW0hEQAAAABJRU5ErkJggg==)
 }
 
@@ -2176,7 +2177,7 @@ ol.embedDesc li {
 }
 
 .category.color-9 {
-    background: #3d50e0
+    background: #1c4e80
 }
 
 .category.NEW,.category.new {
@@ -3561,16 +3562,16 @@ img.unselectedemoji {
 }
 
 .partnerWatermark a {
-    color: #3d50e0!important;
+    color: #1c4e80!important;
     font-weight: 700
 }
 
 .reducedWatermark.free {
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .reducedWatermark.free svg,.partnerWatermark svg {
-    fill: #3d50e0
+    fill: #1c4e80
 }
 
 .reducedWatermark a,.poweredFooter a {
@@ -3665,7 +3666,7 @@ img.unselectedemoji {
 }
 
 .ui-datepicker .ui-datepicker-calendar td a.ui-state-active,.ui-datepicker .ui-datepicker-calendar td a.ui-state-active.ui-state-hover {
-    background: #3d50e0;
+    background: #1c4e80;
     color: #fff
 }
 
@@ -4267,8 +4268,8 @@ img.unselectedemoji {
 }
 
 .embed .featureControl[data-action=read]:hover:before,.embed .featureControl[data-action=read].active:hover:before,.standalone .featureControl[data-action=read]:hover:before,.standalone .featureControl[data-action=read].active:hover:before,.popup .featureControl[data-action=read]:hover:before,.popup .featureControl[data-action=read].active:hover:before {
-    background: #3d50e0;
-    color: #3d50e0
+    background: #1c4e80;
+    color: #1c4e80
 }
 
 .embed .featureControl[data-action=hide],.standalone .featureControl[data-action=hide],.popup .featureControl[data-action=hide] {
@@ -5391,7 +5392,7 @@ html.mobile .embed.popup.inapp .headerClose svg,html.mobile .embed[data-mode=req
 }
 
 .streamNav li.catItem a .ico.color-9 {
-    background: #3d50e0
+    background: #1c4e80
 }
 
 .streamNav li.catItem.watermark {
@@ -5828,7 +5829,7 @@ body.popup .popupContainer .popupWatermark a:before {
     padding: 8px 12px;
     margin: 0 auto;
     border-radius: 4px;
-    background: #3d50e0;
+    background: #1c4e80;
     color: #fff!important
 }
 
@@ -6086,7 +6087,7 @@ body[data-link-mode=button] .featureAction a {
     padding: 10px;
     font-weight: 700;
     border-radius: 3px;
-    background: #3d50e0;
+    background: #1c4e80;
     color: #fff!important
 }
 
@@ -6597,7 +6598,7 @@ body.hasModes:not(.post) .streamNav .roadmapForm {
 }
 
 .roadmapFormInputContainer:focus-within label {
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .roadmapForm form label.pictureAttachmentsLabel {
@@ -6621,7 +6622,7 @@ body.hasModes:not(.post) .streamNav .roadmapForm {
 }
 
 .roadmapForm form .roadmapFormInput {
-    caret-color: #3d50e0
+    caret-color: #1c4e80
 }
 
 .roadmapForm form .roadmapFormInputContainer[title="form details"] {
@@ -6696,7 +6697,7 @@ body.hasModes:not(.post) .streamNav .roadmapForm {
 .roadmapForm form .roadmapFormSubmit {
     padding: 10px 12px;
     border-radius: 3px;
-    background: #3d50e0;
+    background: #1c4e80;
     color: #fff;
     font-weight: 700;
     border: 0;
@@ -6831,7 +6832,7 @@ body.hasModes:not(.post) .streamNav .roadmapForm {
 }
 
 .modeTabs .tab:active,.modeTabs .tab.active {
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .modeTabs .tab.unread:after {
@@ -6884,7 +6885,7 @@ body.hasModes:not(.post) .streamNav .roadmapForm {
 }
 
 .modeTabs .tab.active svg {
-    fill: #3d50e0
+    fill: #1c4e80
 }
 
 body.hasModes[data-mode=roadmap] .stream {
@@ -6970,7 +6971,7 @@ body.hasModes[data-mode=roadmap] .roadmapCats {
 }
 
 .roadmapCat.active span.counter {
-    background: #3d50e0
+    background: #1c4e80
 }
 
 body.hasModes[data-mode=requests] .streamContent {
@@ -7077,7 +7078,7 @@ body.standalone .roadmapStream>* {
 }
 
 .roadmapColumn[data-color="9"] {
-    border-color: #3d50e0
+    border-color: #1c4e80
 }
 
 .roadmapColumn[data-color-var] {
@@ -7174,7 +7175,7 @@ body.standalone .roadmapStream>* {
 }
 
 .roadmapColumn[data-color="9"] .roadmapColumnLabel:before,.simpleDrop.roadmapStatus .dropSelected[data-color="9"]:before,.simpleDrop.roadmapStatus .multiselect li[data-color="9"]:before,.roadmapItemLabel.roadmapStatus[data-color="9"]:before {
-    background: #3d50e0
+    background: #1c4e80
 }
 
 .roadmapColumn[data-color-var] .roadmapColumnLabel:before,.simpleDrop.roadmapStatus .dropSelected[data-color-var]:before,.simpleDrop.roadmapStatus .multiselect li[data-color-var]:before,.roadmapItemLabel.roadmapStatus[data-color-var]:before {
@@ -7280,11 +7281,11 @@ body.post .feature.roadmapPost {
 
 .roadmapItemScore:hover,.roadmapItemScoreComment:hover {
     cursor: pointer;
-    border-color: #3d50e0
+    border-color: #1c4e80
 }
 
 .roadmapItemScore.voted:not(:hover):before,.roadmapItemScoreComment.voted:not(:hover):before {
-    border-color: transparent transparent #3d50e0 transparent
+    border-color: transparent transparent #1c4e80 transparent
 }
 
 .roadmapItemScore span {
@@ -7329,7 +7330,7 @@ body.post .feature.roadmapPost {
 
 .featureFeedbackDetails .replyCommentButton:hover {
     cursor: pointer;
-    color: #3d50e0;
+    color: #1c4e80;
     text-decoration: underline
 }
 
@@ -7383,7 +7384,7 @@ body:not(.post) .roadmapItemContent {
 }
 
 .content .roadmapItemContent .featureTitle {
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .roadmapItemContent .featureContent {
@@ -7505,13 +7506,13 @@ body:not(.post) .roadmapItemContent {
 .roadmapPost .roadmapAction .roadmapActionIcon svg {
     width: 16px;
     height: 16px;
-    fill: #3d50e0;
+    fill: #1c4e80;
     vertical-align: middle
 }
 
 .roadmapPost .roadmapAction .roadmapActionLabel {
     margin-left: 5px;
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .roadmapPost .roadmapAction:hover .roadmapActionLabel {
@@ -7523,7 +7524,7 @@ body:not(.post) .roadmapItemContent {
     bottom: -28px;
     left: 50%;
     transform: translateX(-50%);
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .roadmapAction .roadmapActionVote {
@@ -7610,11 +7611,11 @@ body:not(.post) .roadmapItemContent {
 }
 
 .roadmapItemComments.hasComments:hover span.counter {
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .roadmapItemComments.hasComments:hover span.icon svg {
-    fill: #3d50e0
+    fill: #1c4e80
 }
 
 .loaderElement {
@@ -7841,7 +7842,7 @@ body:not(.post) .roadmapItemContent {
 .roadmapSearchSorter span.sort {
     text-transform: uppercase;
     font-weight: 700;
-    color: #3d50e0
+    color: #1c4e80
 }
 
 .roadmapSearchSorter .simpleDrop {
@@ -7972,8 +7973,8 @@ body:not(.post) .roadmapItemContent {
 
 .roadmapApproval span:hover {
     cursor: pointer;
-    color: #3d50e0;
-    border-color: #3d50e0
+    color: #1c4e80;
+    border-color: #1c4e80
 }
 
 .roadmapApproval span i {
@@ -8030,12 +8031,12 @@ body:not(.post) .roadmapItemContent {
 
 .simpleDrop:focus,.simpleDrop:active,.simpleDrop.active {
     cursor: pointer;
-    color: #3d50e0;
+    color: #1c4e80;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAoCAIAAABmcd1FAAAACXBIWXMAAAsSAAALEgHS3X78AAAA0ElEQVRIiWP8//8/A20AE43MHTV61OhRo0eNHuFGT5733i7w4fZ9X3Ap3b7vi13gw8nz3pNsNAS0T357+OQ3THWHT35rn/yWeCejGJ2bJKiiyAYx/c79X8iK7tz/BTFXRZEtN0mQHFdPahZXUWT78vVfXu1LuOl37v/Kq3355es/FUW2Sc3ixLsavW6Em8vDzQQxCNlcHm4SEiuWahfZdAiXDHOxG41sOiR8yTAXp9Fw0798/TevT5IMc/EZTTkYLUNGjR41etToUaOpBRgYGAAsI3HZnW0hEQAAAABJRU5ErkJggg==);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center right;
-    border-color: #3d50e0!important
+    border-color: #1c4e80!important
 }
 
 .simpleDrop .multiselect {
@@ -8072,7 +8073,7 @@ body:not(.post) .roadmapItemContent {
 
 .simpleDrop .multiselect ul li:hover {
     color: #fff;
-    background: #3d50e0
+    background: #1c4e80
 }
 
 .simpleDrop:hover {
@@ -8275,7 +8276,7 @@ body[data-mode=requests] img.userName,body[data-mode=roadmap] img.userName {
 }
 
 .feedbackInfo .feedbackActions a:hover {
-    color: #3d50e0;
+    color: #1c4e80;
     cursor: pointer;
     background: 0
 }
@@ -8656,7 +8657,7 @@ body.embed.popup.inapp[data-mode=roadmap] .header.asleep {
 
 .scrollPrompt:hover,.scrollPrompt:active,.scrollPrompt:focus {
     cursor: pointer;
-    background: #3d50e0
+    background: #1c4e80
 }
 
 .embed[data-scroll-hide=true] .scrollPrompt,.embed[data-requests-prompt-expanded=true] .scrollPrompt,.embed:not(.beamer_active) .scrollPrompt,.embed[data-scroll-hide=false] .container:after {

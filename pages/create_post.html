@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+    <title>Beamer - Beam some news</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/creation.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../assets/css/medium-editor.min.css">
+    <link rel="stylesheet" href="../assets/css/beagle.min.css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../assets/css/medium-editor-insert-plugin-frontend.min.css">
+    <link rel="stylesheet" href="../assets/css/medium-editor-insert-plugin.min.css">
+    <link rel="stylesheet" href="../assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui-timepicker-addon.min.css">
+    <link rel="stylesheet" href="../assets/css/jquery.emojipicker.css">
+    <link rel="stylesheet" href="../assets/css/beamer-boosted-embed.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" media="screen" rel="stylesheet" />
+
+</head>
+
+<body data-view="add" class="win webkit">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV5M5FK" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="container collapsed">
+
+        <div id="boostedAnnouncementsBlock" class="cardLock" style="display:none;">
+
+
+
+            <div class="popUpgrade popup modal" data-feature="notifications">
+
+                <div class="modalClose" onclick="hidePlanBlock()"></div>
+
+                <div class="modalImage side left">
+                </div>
+                <div class="modalContent side right">
+                    <div class="modalTag">
+                        Enable Boosted Announcements
+                    </div>
+                    <div class="title modalTitle default">Get <span class="customFeature">instant engagement</span> with
+                        <span class="plan">Boosted Announcements</span>
+                    </div>
+
+                    <div class="modalIntro">
+                        Use these powerful widgets and improve your engagement even more for just $19/month
+                        <span class="modalOffer">
+                            Launch offer: 1st month free
+                        </span>
+                    </div>
+                    <div class="featureList">
+                        <ul>
+                            <li id="boosted">
+                                <div class="title">Get pop-ups, top bars, snippets and tooltips</div>
+                            </li>
+
+                            <li id="paid">
+                                <div class="paid">Add-on available only for paid plans</div>
+                            </li>
+
+                            <li id="quote">
+                                <span class="material-icons">format_quote</span>
+                                <div class="quote">
+                                    This feature is amazing! Our unique views increased by almost 4x and the number of
+                                    clicks increased as well!
+                                    <div class="author">
+                                        Mariana Kasbarian - <span class="company">TiendaNube</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <a href="billing?refUpgrade=add_boosted" target="_blank"
+                        class="action button primary large success">Upgrade your plan now!</a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="globalBlock" class="cardLock" style="display:none;">
+
+
+
+
+            <div class="popUpgrade popup modal">
+
+                <div class="modalClose" onclick="hidePlanBlock()"></div>
+
+                <div class="modalImage side left">
+                </div>
+                <div class="modalContent side right">
+
+                    <div class="modalTag">
+                        Upgrade to Beamer Starter
+                    </div>
+                    <div class="title modalTitle custom" style="display: none;">Get <span
+                            class="customFeature">null</span> with <span class="plan">Beamer Starter</span></div>
+                    <div class="title modalTitle default">Upgrade to <span class="plan">Starter</span></div>
+
+
+                    <div class="modalIntro">Get this feature and many more from just $49/month</div>
+                    <div class="featureList">
+                        <ul>
+                            <li id="appearance">
+                                <div class="title">Appearance customization</div>
+                            </li>
+                            <li id="watermark">
+                                <div class="title">Remove watermark</div>
+                            </li>
+                            <li id="notifications">
+                                <div class="title">Boosted announcements</div>
+                            </li>
+                            <li id="realtime">
+                                <div class="title">Auto refresh</div>
+                            </li>
+                            <li id="appearance">
+                                <div class="title">Post scheduling</div>
+                            </li>
+                            <li id="segmentation">
+                                <div class="title">Multiple languages</div>
+                            </li>
+                            <li id="whitelist">
+                                <div class="title">Invite your team</div>
+                            </li>
+                            <li id="customcss">
+                                <div class="title">Advanced analytics</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="billing" target="_blank" class="action button primary large success">Get started for
+                        free</a>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="globalProBlock" class="cardLock" style="display:none;">
+
+
+            <div class="popUpgrade popup modal">
+
+                <div class="modalClose" onclick="hidePlanBlock()"></div>
+
+                <div class="modalImage side left">
+                </div>
+                <div class="modalContent side right">
+
+                    <div class="modalTag">
+                        Upgrade to Beamer Pro
+                    </div>
+                    <div class="title modalTitle custom" style="display: none;">Get <span
+                            class="customFeature">more</span> with <span class="plan">Beamer Pro</span></div>
+                    <div class="title modalTitle default">Upgrade to <span class="plan">Pro</span></div>
+
+
+                    <div class="modalIntro">Get this feature and many more from just $99/month</div>
+                    <div class="featureList">
+                        <ul>
+
+                            <li id="watermark">
+                                <div class="title">Remove watermark</div>
+                            </li>
+
+                            <li id="push">
+                                <div class="title">Push notifications</div>
+                            </li>
+                            <li id="feedandreact">
+                                <div class="title">Feedback and reactions</div>
+                            </li>
+                            <li id="segmentation">
+                                <div class="title">User segmentation</div>
+                            </li>
+                            <li id="email notifications">
+                                <div class="title">Email notifications</div>
+                            </li>
+                            <li id="inbox">
+                                <div class="title">Inbox</div>
+                            </li>
+
+                            <li id="notifications">
+                                <div class="title">Boosted announcements</div>
+                            </li>
+                            <li id="realtime">
+                                <div class="title">Auto refresh</div>
+                            </li>
+                            <li id="appearance">
+                                <div class="title">Post scheduling</div>
+                            </li>
+                            <li id="customcss">
+                                <div class="title">Appearance and CSS customization</div>
+                            </li>
+
+
+
+                            <li id="domain">
+                                <div class="title">Custom domain</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="billing" target="_blank" class="action button primary large success">Get started for
+                        free</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="../home.html">
+                <div class="menuOption logo">
+                    <svg version="1.1" id="beamer-logo" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="42px"
+                        viewBox="0 0 160 42" enable-background="new 0 0 160 42" xml:space="preserve">
+                        <g id="logo-wordmark">
+                            <path id="logo-b" fill="#FFFFFF" d="M49.872,10.82v7.392c0.741-1.381,2.953-2.139,4.361-2.139c3.898,0,6.782,2.382,6.782,6.986
+						c0,4.387-2.958,6.984-6.884,6.984c-1.624,0-3.279-0.525-4.308-2.122l-0.22,1.855h-3.138V10.82H49.872z M50.036,23.059
+						c0,2.41,1.787,3.927,3.873,3.927c2.112,0,3.791-1.599,3.791-3.927c0-2.41-1.679-3.898-3.791-3.898
+						C51.823,19.16,50.036,20.729,50.036,23.059z" />
+                            <path id="logo-e_1_" fill="#FFFFFF"
+                                d="M66.255,24.296c0.216,1.63,1.651,2.82,3.98,2.82c1.218,0,2.817-0.473,3.575-1.257
+						l2.111,2.079c-1.408,1.462-3.71,2.163-5.741,2.163c-4.603,0-7.338-2.845-7.338-7.123c0-4.062,2.762-6.962,7.094-6.962
+						c4.469,0,7.256,2.801,6.743,8.28H66.255z M73.513,21.482c-0.217-1.63-1.571-2.6-3.467-2.6c-1.787,0-3.249,0.97-3.737,2.6H73.513z" />
+                            <path id="logo-a" fill="#FFFFFF"
+                                d="M89.814,16.447h3.152v13.329h-3.102l-0.16-1.966c-0.762,1.571-2.844,2.322-4.334,2.35
+						c-3.953,0.027-6.877-2.413-6.877-7.098c0-4.604,3.059-7.016,6.957-6.988c1.787,0,3.492,0.862,4.254,2.191L89.814,16.447z
+						 M81.758,23.059c0,2.545,1.73,4.062,3.953,4.062c5.184,0,5.184-8.097,0-8.097C83.488,19.023,81.758,20.514,81.758,23.059z" />
+                            <path id="logo-m" fill="#FFFFFF" d="M104.668,29.776v-7.178c0-1.761-0.947-3.358-2.76-3.358c-1.787,0-2.867,1.597-2.867,3.358
+						v7.178h-3.26V16.299h3.047l0.244,1.661c0.703-1.354,2.248-1.823,3.52-1.823c1.598,0,3.193,0.658,3.953,2.499
+						c1.191-1.895,2.73-2.432,4.465-2.432c3.789,0,5.654,2.333,5.654,6.34v7.232h-3.26v-7.232c0-1.76-0.76-3.249-2.551-3.249
+						c-1.787,0-2.928,1.542-2.928,3.303v7.178H104.668z" />
+                            <path id="logo-e" fill="#FFFFFF"
+                                d="M122.846,24.296c0.215,1.63,1.652,2.82,3.979,2.82c1.221,0,2.818-0.473,3.574-1.257
+						l2.111,2.079c-1.406,1.462-3.709,2.163-5.74,2.163c-4.6,0-7.336-2.845-7.336-7.123c0-4.062,2.762-6.962,7.096-6.962
+						c4.465,0,7.256,2.801,6.74,8.28H122.846z M130.102,21.482c-0.215-1.63-1.57-2.6-3.467-2.6c-1.787,0-3.248,0.97-3.734,2.6H130.102z" />
+                            <path id="logo-r" fill="#FFFFFF" d="M138.875,16.447l0.242,1.518c1.029-1.651,2.41-1.907,3.764-1.907
+						c1.381,0,2.711,0.535,3.441,1.266l-1.49,2.866c-0.676-0.568-1.271-0.868-2.354-0.868c-1.736,0-3.303,0.919-3.303,3.383v7.07h-3.406
+						V16.447H138.875z" />
+                            <path id="logo-dot" fill="#FFFFFF" d="M151.383,27.999c0,2.666-3.898,2.666-3.898,0C147.484,25.481,151.383,25.481,151.383,27.999z
+						" />
+                        </g>
+                        <g id="logo-iso">
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M3.588,34.618c-1.017,0-1.981-0.598-2.393-1.591c-0.544-1.311,0.086-2.812,1.407-3.353l30.229-12.364
+							c1.32-0.539,2.833,0.086,3.376,1.398c0.543,1.312-0.086,2.813-1.407,3.354L4.572,34.425C4.25,34.556,3.916,34.618,3.588,34.618z" />
+                            </g>
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M3.588,24.825c-1.017,0-1.981-0.599-2.393-1.591c-0.544-1.312,0.086-2.813,1.407-3.354L32.832,7.519
+							c1.32-0.541,2.833,0.084,3.376,1.396c0.543,1.312-0.086,2.813-1.407,3.354L4.572,24.63C4.25,24.764,3.916,24.825,3.588,24.825z" />
+                            </g>
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M3.588,14.709c-1.021,0-1.989-0.603-2.397-1.6c-0.538-1.315,0.099-2.813,1.421-3.347l18.543-7.491
+							c1.324-0.533,2.832,0.099,3.37,1.413c0.539,1.313-0.098,2.812-1.421,3.347L4.561,14.52C4.242,14.649,3.913,14.709,3.588,14.709z" />
+                            </g>
+                            <g>
+                                <path fill="#FFFFFF" d="M15.227,39.918c-1.021,0-1.989-0.604-2.396-1.602c-0.539-1.314,0.098-2.814,1.421-3.35l18.543-7.488
+							c1.324-0.533,2.833,0.099,3.371,1.412c0.538,1.315-0.099,2.813-1.421,3.347l-18.544,7.491
+							C15.881,39.856,15.551,39.918,15.227,39.918z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+            <a href="home" class="tooltippable" data-tooltip-title="Notifications" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <div class="menuOption home ">
+                    <i class="material-icons">dashboard</i>
+                    <span>Notifications</span>
+                </div>
+            </a>
+
+
+            <a class="tooltippable" data-tooltip-title="Beamer Feedback" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1" data-enabled="false"
+                onclick="sendIntercomMessage('Hi! I want to enable Feedback in my account');">
+                <div class="menuOption"">
+				<i class=" material-icons">explore</i>
+                    <span>Beamer Feedback</span>
+                    <div class="beta">beta</div>
+                </div>
+            </a>
+
+
+            <a href="nps" class="tooltippable" data-tooltip-title="NPS" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <div class="menuOption ">
+                    <i class="material-icons">bubble_chart</i>
+                    <span>NPS</span>
+                </div>
+            </a>
+
+
+            <a href="inbox" class="tooltippable" data-tooltip-title="Inbox" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1" data-enabled="false">
+                <div class="menuOption ">
+                    <i class="material-icons">inbox</i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+
+
+
+            <a href="users" class="tooltippable" data-tooltip-title="Users" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <div class="menuOption ">
+                    <i class="material-icons">contacts</i>
+                    <span>Users</span>
+                </div>
+            </a>
+
+
+            <a href="analytics" class="tooltippable" data-tooltip-title="Analytics" data-tooltip-placement="right"
+                data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <div class="menuOption ">
+                    <i class="material-icons">insert_chart</i>
+                    <span>Analytics</span>
+                </div>
+            </a>
+
+            <div class="user">
+                <a class="tooltippable" data-tooltip-title="Updates" data-tooltip-placement="right"
+                    data-tooltip-container=".container.collapsed" data-tooltip-delay="1" id="beamerFeatures">
+                    <div class="menuOption">
+                        <i class="material-icons">notifications</i>
+                        <span>Updates</span>
+                    </div>
+                </a>
+
+                <a href="billing?refUpgrade=menu_upgrade-button" class="tooltippable" data-tooltip-title="Upgrade"
+                    data-tooltip-placement="right" data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                    <div class="menuOption">
+                        <i class="material-icons">star</i>
+                        <span>Upgrade</span>
+                    </div>
+                </a>
+
+
+                <a href="integrations" class="tooltippable" data-tooltip-title="Integrations"
+                    data-tooltip-placement="right" data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                    <div class="menuOption ">
+                        <i class="material-icons">extension</i>
+                        <span>Integrations</span>
+                    </div>
+                </a>
+
+                <a href="settings" class="tooltippable" data-tooltip-title="Settings" data-tooltip-placement="right"
+                    data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                    <div class="menuOption ">
+                        <i class="material-icons">settings</i>
+                        <span>Settings</span>
+                    </div>
+                </a>
+                <div class="account">
+                    <div class="accountName">
+
+
+                        <img class="js-initial" data-name="Muhammad Ahmad Raza" data-height="30" data-width="30"
+                            data-font-size="13" />
+
+                        <div>
+                            Muhammad Ahmad Raza
+                        </div>
+                    </div>
+                    <div class="accountSwitch">
+                        <i class="material-icons">chevron_right</i>
+                    </div>
+                </div>
+
+
+                <div class="menuCard">
+                    <div class="userinfo">
+                        <div class="avatar">
+
+
+                            <img class="js-initial" data-email="ahmadraza@applicon.com" data-name="Muhammad Ahmad Raza"
+                                data-height="30" data-width="30" data-font-size="13" />
+
+                        </div>
+                        <div class="data">
+                            <span class="name">
+                                Muhammad Ahmad Raza
+                            </span>
+                            <span class="status">
+                                Administrator
+                            </span>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <img class="js-initial" data-name="school app" data-height="30" data-width="30"
+                            data-font-size="13" />
+                        <div class="data">
+                            <span class="name">
+                                school app
+                                <div class="subtitle">
+                                    Switch or create account
+                                </div>
+                            </span>
+                        </div>
+                        <i class="material-icons">chevron_right</i>
+                        <div class="workspace">
+                            <ul class="options">
+                                <li class="action" data-action="back">
+                                    Back
+                                </li>
+                                <li class="option current tooltippable  hasDescription"
+                                    data-tooltip-title="school app - this is a school application."
+                                    data-tooltip-placement="right" data-tooltip-container=".container.collapsed"
+                                    data-tooltip-delay="1">
+                                    <img class="js-initial" data-name="school app" data-height="30" data-width="30"
+                                        data-font-size="13" />
+                                    <div class="productName">
+                                        school app
+                                    </div>
+
+                                    <div class="productDescription">
+                                        this is a school application.
+                                    </div>
+
+                                </li>
+
+
+
+                                <li class="action" data-action="create-new" data-id="59482">
+                                    <i class="material-icons">add</i> Create new account
+                                </li>
+                                <li class="action" data-action="merge">
+                                    <i class="material-icons">call_merge</i> Merge accounts
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <a href="settings">
+                                    <i class="material-icons">settings</i> Settings
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="embed">
+                                    <i class="material-icons">code</i> Embed code
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="billing">
+                                    <i class="material-icons">payment</i> Billing
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="integrations">
+                                    <i class="material-icons">extension</i> Integrations
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="settings#api">
+                                    <i class="material-icons">power</i> API
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="privacy">
+                                    <i class="material-icons">lock</i> Privacy
+                                </a>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="nav docs">
+                        <ul>
+                            <li>
+                                <a href="https://www.getbeamer.com/help/" target="_blank">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.getbeamer.com/docs/" target="_blank">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.getbeamer.com/api/" target="_blank">
+                                    API Docs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav actions">
+                        <ul>
+                            <li>
+                                <a class="action close" data-action="close">
+                                    <i class="material-icons">close</i>
+                                    <span>Close</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="action" onclick="logout();" data-action="logout">
+                                    <i class="material-icons">power_settings_new</i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window._account = {
+                user_id: '123514',
+                product_id: '59482'
+            };
+            var beamer_config = {
+                selector: 'beamerFeatures', //REPLACE: Your element Id to position the alert mZXqptmd65
+                product_id: 'mZXqptmd65', //DO NOT CHANGE: This is your product code on Beamer
+                top: 10, //Optional: Top position offset
+                right: 5, //Optional: Right position offset //52
+                filter: 'logged;product_59482;role_admin;role_admin_product_59482;plan_beamerFree;web_type_elearning', //Optional : Bring the news for a certain role as well as all the public news
+
+
+                notification_prompt: 'none',
+
+                delay: 200,
+                user_id: '123514',
+                user_firstname: 'Muhammad', //Optional : input your user firstname for better statistics
+                user_lastname: 'Ahmad Raza', //Optional : input your user lastname for better statistics
+                user_email: 'ahmadraza@applicon.com', //Optional : input your user lastname for better statistics
+
+                user_created_at: 1698688684000,
+
+                plan: 'beamerFree',
+                user_role: 'admin',
+                company: 'school app',
+                product_code: 'CSLwjvGZ59482',
+
+                last_activity_at: 1700034908793,
+
+                uses_push: false,
+
+
+
+
+            };
+        </script>
+
+        <script type="text/javascript" src="../assets/js/beamer-embed.js"></script>
+
+
+        <script>
+            window.intercomSettings = {
+                org_id: 59482,
+
+
+                refUrl: "https:\/\/app.getbeamer.com\/signup?cta=login_top&refUrl=www.getbeamer.com&landing=https%3A%2F%2Fapp.getbeamer.com%2Flogin",
+
+
+
+                code: "CSLwjvGZ59482",
+
+
+                landing: "https:\/\/app.getbeamer.com\/signup",
+
+
+                app_id: "cm914e02",
+
+                beamer_product_id: "CSLwjvGZ59482",
+
+
+                created_at: 1698688684,
+
+
+                user_created_at: 1698688630,
+
+
+                web_type: "elearning",
+
+
+                web_url: "https:\/\/test.mafonim.com\/",
+
+
+                web_domain: "mafonim.com",
+
+
+                domain_authority: 0,
+
+                user_id: "b_123514",
+                user_hash: "ebce7311724c47eb5bc6e629a20d8236f30756ec555492f3218bfbfb6c359711",
+                email: "ahmadraza@applicon.com",
+                role: "admin",
+                "ref": "beamerappjoincube",
+                plan: "beamerFree",
+                name: "Muhammad",
+
+                last_name: "Ahmad Raza",
+
+                company_name: "school app",
+
+
+
+
+                is_paying: false,
+                is_enterprise: false,
+                enable_announcements: true,
+                standalone: "https:\/\/app.getbeamer.com\/schoolapp2485\/"
+            };
+        </script>
+        <script
+            id="beamerIntercomScript">(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/ltr1mfw0'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()</script>
+
+        <script>
+            var _csrfToken = 'sFU0dNZ2W42MTpE7iLE9A0kX5walO1Mz4nfmlp0K8bY=';
+            var _plan = 'beamerFree';
+        </script>
+        <script type="text/javascript" src="../assets/js/initial.js"></script>
+        <script type="text/javascript" src="../assets/js/menu.js"></script>
+        <script type="text/javascript" src="../assets/js/modal.js"></script>
+        <script type="text/javascript" src="../assets/js/popper.js"></script>
+        <script type="text/javascript" src="../assets/js/audit.js"></script>
+        <script type="text/javascript" src="../assets/js/tooltip.js"></script>
+        <script type="text/javascript" src="../assets/js/tooltipUtils.js"></script>
+        <script type="text/javascript" src="../assets/js/md5.min.js"></script>
+
+
+        <script type="text/javascript">
+            //	Amplitude script
+            (function (e, t) {
+                var n = e.amplitude || { _q: [], _iq: {} }; var r = t.createElement("script")
+                    ; r.type = "text/javascript"
+                    ; r.integrity = "sha384-d/yhnowERvm+7eCU79T/bYjOiMmq4F11ElWYLmt0ktvYEVgqLDazh4+gW9CKMpYW"
+                    ; r.crossOrigin = "anonymous"; r.async = true
+                    ; r.src = "https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"
+                    ; r.onload = function () {
+                        if (!e.amplitude.runQueuedFunctions) {
+                            console.log("[Amplitude] Error: could not load SDK")
+                        }
+                    }
+                    ; var i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i)
+                    ; function s(e, t) {
+                        e.prototype[t] = function () {
+                            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0))); return this
+                        }
+                    }
+                var o = function () { this._q = []; return this }
+                    ; var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset"]
+                    ; for (var u = 0; u < a.length; u++) { s(o, a[u]) } n.Identify = o; var c = function () {
+                        this._q = []
+                            ; return this
+                    }
+                    ; var l = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"]
+                    ; for (var p = 0; p < l.length; p++) { s(c, l[p]) } n.Revenue = c
+                    ; var d = ["init", "logEvent", "logRevenue", "setUserId", "setUserProperties", "setOptOut", "setVersionName", "setDomain", "setDeviceId", "setGlobalUserProperties", "identify", "clearUserProperties", "setGroup", "logRevenueV2", "regenerateDeviceId", "groupIdentify", "onInit", "logEventWithTimestamp", "logEventWithGroups", "setSessionId", "resetSessionId"]
+                    ; function v(e) {
+                        function t(t) {
+                            e[t] = function () {
+                                e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+                            }
+                        }
+                        for (var n = 0; n < d.length; n++) { t(d[n]) }
+                    } v(n); n.getInstance = function (e) {
+                        e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase()
+                            ; if (!n._iq.hasOwnProperty(e)) { n._iq[e] = { _q: [] }; v(n._iq[e]) } return n._iq[e]
+                    }
+                    ; e.amplitude = n
+            })(window, document);
+
+            var EventLogger = (function () {
+                var instance;
+
+                function create() {
+                    init();
+                    return {
+                        log: log,
+                        logout: logout,
+                        setProperties: setProperties
+                    }
+                }
+
+                function init() {
+                    try {
+
+                        amplitude.getInstance().init("beeefc311e4643e6fdd809ece6ad550d", '123514');
+                        setProperties({
+                            firstName: 'Muhammad',
+                            lastName: 'Ahmad Raza',
+                            email: 'ahmadraza@applicon.com',
+                            product: 'school app',
+                            productCode: 'CSLwjvGZ59482',
+                            plan: 'beamerFree'
+                        });
+
+
+                    } catch (e) {
+                        console.error(e);
+                    }
+                }
+
+                function setProperties(properties) {
+                    try {
+                        amplitude.getInstance().setUserProperties(properties);
+                    } catch (e) {
+                        console.error(e);
+                    }
+                }
+
+                function log(event, properties) {
+                    try {
+                        if (typeof properties === 'undefined') {
+                            properties = {};
+                        }
+                        properties.currentUrl = window.location.href;
+
+                        amplitude.getInstance().logEvent(event, properties);
+                    } catch (e) {
+                        console.error(e);
+                    }
+                }
+
+                function logout() {
+                    try {
+                        log('logout');
+                        amplitude.getInstance().setUserId(null);
+                    } catch (e) {
+                        console.error(e);
+                    }
+                }
+
+                return {
+                    getInstance: function () {
+                        if (typeof instance === 'undefined') {
+                            instance = create();
+                        }
+                        return instance;
+                    }
+                }
+            })();
+        </script>
+        <div class="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="contentHeader">
+
+                <div class="mobileMenu">
+                    <i class="material-icons">menu</i>
+                    <i class="material-icons">arrow_back_ios</i>
+                </div>
+                <div class="contentTitle">
+                    Beam some news
+
+
+                    <div class="productCode">
+
+                        <span class="name">
+                            ID:
+                        </span>
+                        <span class="code">CSLwjvGZ59482</span>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="featureButtons">
+
+                    <div class="button secondary" onclick="preview(this)">
+                        <i class="material-icons">visibility</i><span>Preview</span>
+                    </div>
+
+                    <div class="button secondary" id="draftButton" onclick="save(false)">
+                        <i class="material-icons">send_and_archive</i><span>Save as a Draft</span>
+                    </div>
+
+                    <div class="button primary addLink" id="publishButton" onclick="save(true)">
+                        <i class="material-icons unscheduled">send</i>
+                        <i class="material-icons scheduled" style="display: none;">schedule_send</i>
+                        <span class="unscheduled">
+
+
+                            Save and Publish
+
+                        </span>
+                        <span class="scheduled" style="display: none;">Save and Schedule</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="news" class="news">
+
+
+
+                <form action="createOrEditFeature" method="post" id="featureForm" autocomplete="off">
+                    <div class="notepad">
+                        <div class="feature">
+                            <div class="languageTabsContainerBox">
+                                <div class="languageTabsContainer" id="languageTabEdit">
+
+                                    <div id="ENGLISHTab" class="languageTab" data-rtl="false" data-language="EN"
+                                        data-language-name="ENGLISH"
+                                        onclick="displayLanguageEditor(&quot;ENGLISH&quot;)">
+                                        ENGLISH
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fadeout" id="fadeoutEdit"></div>
+
+                            <div id="filtersBlock" class="cardLock" style="display:none;">
+
+                                <div class="popUpgrade popup modal">
+                                    <div class="modalClose" onclick="hidePlanBlock()"></div>
+                                    <div class="modalImage side left">
+                                    </div>
+                                    <div class="modalContent side right">
+                                        <div class="modalTag">
+                                            Upgrade to Beamer Pro
+                                        </div>
+                                        <div class="title modalTitle custom" style="display: none;">Get <span
+                                                class="customFeature">more</span> with <span class="plan">Beamer
+                                                Pro</span></div>
+                                        <div class="title modalTitle default">Upgrade to <span class="plan">Pro</span>
+                                        </div>
+
+                                        <div class="modalIntro">Get this feature and many more from just $99/month</div>
+                                        <div class="featureList">
+                                            <ul>
+                                                <li id="watermark">
+                                                    <div class="title">Remove watermark</div>
+                                                </li>
+                                                <li id="push">
+                                                    <div class="title">Push notifications</div>
+                                                </li>
+                                                <li id="feedandreact">
+                                                    <div class="title">Feedback and reactions</div>
+                                                </li>
+                                                <li id="segmentation">
+                                                    <div class="title">User segmentation</div>
+                                                </li>
+                                                <li id="email notifications">
+                                                    <div class="title">Email notifications</div>
+                                                </li>
+                                                <li id="inbox">
+                                                    <div class="title">Inbox</div>
+                                                </li>
+
+                                                <li id="notifications">
+                                                    <div class="title">Boosted announcements</div>
+                                                </li>
+                                                <li id="realtime">
+                                                    <div class="title">Auto refresh</div>
+                                                </li>
+                                                <li id="appearance">
+                                                    <div class="title">Post scheduling</div>
+                                                </li>
+                                                <li id="customcss">
+                                                    <div class="title">Appearance and CSS customization</div>
+                                                </li>
+                                                <li id="domain">
+                                                    <div class="title">Custom domain</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="billing?refUpgrade=add" target="_blank"
+                                            class="action button primary large success">Get started for free</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="startupBlock" class="cardLock" style="display:none;">
+                                <div class="popUpgrade popup modal">
+                                    <div class="modalClose" onclick="hidePlanBlock()"></div>
+                                    <div class="modalImage side left">
+                                    </div>
+                                    <div class="modalContent side right">
+                                        <div class="modalTag">
+                                            Upgrade to Beamer Starter
+                                        </div>
+                                        <div class="title modalTitle custom" style="display: none;">Get <span
+                                                class="customFeature">null</span> with <span class="plan">Beamer
+                                                Starter</span></div>
+                                        <div class="title modalTitle default">Upgrade to <span
+                                                class="plan">Starter</span></div>
+                                        <div class="modalIntro">Get this feature and many more from just $49/month</div>
+                                        <div class="featureList">
+                                            <ul>
+                                                <li id="appearance">
+                                                    <div class="title">Appearance customization</div>
+                                                </li>
+                                                <li id="watermark">
+                                                    <div class="title">Remove watermark</div>
+                                                </li>
+                                                <li id="notifications">
+                                                    <div class="title">Boosted announcements</div>
+                                                </li>
+                                                <li id="realtime">
+                                                    <div class="title">Auto refresh</div>
+                                                </li>
+                                                <li id="appearance">
+                                                    <div class="title">Post scheduling</div>
+                                                </li>
+                                                <li id="segmentation">
+                                                    <div class="title">Multiple languages</div>
+                                                </li>
+                                                <li id="whitelist">
+                                                    <div class="title">Invite your team</div>
+                                                </li>
+                                                <li id="customcss">
+                                                    <div class="title">Advanced analytics</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="billing?refUpgrade=add" target="_blank"
+                                            class="action button primary large success">Get started for free</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featureForm" id="ENGLISH" data-language-name="ENGLISH">
+                                <input type="hidden" name="language" value="EN" />
+                                <input type="hidden" name="contentHolder" value="" id="contentENGLISH" />
+                                <input type="hidden" name="contentHolder" value="" id="contentENGLISH" />
+                                <div class="featureTitle">
+                                    <input type="text" name="title" placeholder="Insert a title" required value="">
+                                </div>
+                                <div class="featureCopyTranslations hide">
+                                    <div name="copyTranslation"
+                                        class="copyTranslation button secondary drop tooltippable active"
+                                        data-tooltip-html="">
+                                        Copy translation
+                                        <div class="select">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="featureContent">
+                                    <div class="toolbar"></div>
+                                    <div id="contentAreaENGLISH" class="editable" data-placeholder="Write your content">
+                                    </div>
+                                </div>
+
+                                <hr>
+                                <h3 class="editorLabel">Action link. <span class="optional">optional</span></h3>
+                                <div class="featureAction">
+                                    <input class="actionName" type="text" name="actionName" id="actionName"
+                                        placeholder="Insert link text" value="">
+                                </div>
+                                <div class="featureAction">
+                                    <input class="actionURL" type="url" name="action" id="actionURL"
+                                        placeholder="Insert link URL (https://...)" value="">
+                                </div>
+
+                            </div>
+
+                            <div id="ENGLISHcategoryTranslations" style="display: none;">
+                                <span class="categoryNew" data-category="NEW">New</span>
+                                <span class="categoryImprovement" data-category="IMPROVEMENT">Improvement</span>
+                                <span class="categoryFix" data-category="FIX">Fix</span>
+                                <span class="categoryComingSoon" data-category="COMINGSOON">Coming Soon</span>
+                                <span class="categoryAnnouncement" data-category="ANNOUNCEMENT">Announcement</span>
+                                <span class="categoryOther" data-category="OTHER">Other (CUSTOM)</span>
+                            </div>
+                        </div>
+                        <div class="feature subtle">
+                            <h3 class="editorLabel">Notification Options.</h3>
+                            <div class="featureAction boostedAnnouncements">
+                                <div class="chooser" data-choice="boosted">
+                                    <div class="chooserOption hasIcon selected" data-type="sidebar" data-value="0">
+                                        <i class="chooserDemo" data-type="sidebar"></i>
+                                        <div class="chooserContent">
+                                            <span class="name">In-app</span>
+                                            <span class="text">Show in your in-app widget</span>
+                                        </div>
+                                        <i class="chooserPreview tooltippable material-icons"
+                                            data-tooltip-title="Preview" data-tooltip-placement="top">visibility</i>
+                                    </div>
+                                    <div class="chooserOption hasIcon selected" data-type="standalone" data-value="0">
+                                        <i class="chooserDemo" data-type="standalone"></i>
+                                        <div class="chooserContent">
+                                            <span class="name">Standalone</span>
+                                            <span class="text">Show in your standalone page</span>
+                                        </div>
+                                        <i class="chooserPreview tooltippable material-icons"
+                                            data-tooltip-title="Preview" data-tooltip-placement="top">visibility</i>
+                                    </div>
+                                    <div class="chooserOption hasIcon disabled" data-type="push" data-value="0"
+                                        onclick="displayProPlanBlock('push notifications', 'notifications');">
+                                        <i class="chooserDemo" data-type="push"></i>
+                                        <div class="chooserContent">
+                                            <span class="name">Push</span>
+                                            <span class="text">Send a push notification</span>
+                                        </div>
+                                        <i class="chooserPreview tooltippable material-icons"
+                                            data-tooltip-title="Preview" data-tooltip-placement="top">visibility</i>
+                                    </div>
+                                    <div class="chooserOption hasIcon disabled" data-type="email" data-value="0"
+                                        onclick="displayProPlanBlock('email notifications', 'notifications');">
+                                        <i class="chooserDemo" data-type="email"></i>
+                                        <div class="chooserContent">
+                                            <span class="name">Email</span>
+                                            <span class="text">Send an email notification</span>
+                                        </div>
+                                        <i class="chooserPreview tooltippable material-icons"
+                                            data-tooltip-title="Preview" data-tooltip-placement="top">visibility</i>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="showInWidget" value="true" id="showInWidget" />
+                                <input type="hidden" name="showInPublicPage" value="true" id="showInPublicPage" />
+                            </div>
+                            <div class="featureAction boostedAnnouncements">
+                                <div class="chooser" data-choice="boosted">
+                                    <div class="chooserOption hasIcon boosted" data-type="topbar" data-value="1">
+                                        <i class="chooserDemo" data-type="topbar"></i>
+                                        <div class="chooserContent">
+                                            <span class="name">Topbar</span>
+                                            <span class="text">Announce with a top-bar</span>
+                                        </div>
+                                        <i class="chooserPreview tooltippable material-icons"
+                                            data-tooltip-title="Preview" data-tooltip-placement="top">visibility</i>
+                                    </div>
+                                    <div class="chooserOption hasIcon boosted" data-type="popup" data-value="2">
+                                        <i class="chooserDemo" data-type="popup"></i>
+                                        <div class="chooserContent">
+                                            <span class="name">Popup</span>
+                                            <span class="text">Announce with a centered popup</span>
+                                        </div>
+                                        <i class="chooserPreview tooltippable material-icons"
+                                            data-tooltip-title="Preview" data-tooltip-placement="top">visibility</i>
+                                    </div>
+                                    <div class="chooserOption hasIcon boosted" data-type="snippet" data-value="3">
+                                        <i class="chooserDemo" data-type="snippet"></i>
+                                        <div class="chooserContent">
+                                            <span class="name">Snippet</span>
+                                            <span class="text">Announce with a corner snippet</span>
+                                        </div>
+                                        <i class="chooserPreview tooltippable material-icons"
+                                            data-tooltip-title="Preview" data-tooltip-placement="top">visibility</i>
+                                    </div>
+                                    <div class="chooserOption hasIcon boosted" data-type="tooltip" data-value="4">
+                                        <i class="chooserDemo" data-type="tooltip"></i>
+                                        <div class="chooserContent">
+                                            <span class="name">Tooltip</span>
+                                            <span class="text">Announce next to your button</span>
+                                        </div>
+                                        <i class="chooserPreview tooltippable material-icons"
+                                            data-tooltip-title="Preview" data-tooltip-placement="top">visibility</i>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="boostedAnnouncementType" value="0"
+                                    id="boostedAnnouncementType" />
+                            </div>
+                        </div>
+                        <div class="feature subtle">
+                            <h3 class="editorLabel">Segmentation.</h3>
+
+
+                            <div class="featureAction" id="segmentationAction"
+                                onclick="displayProPlanBlock('user segmentation');">
+                                <input readonly onclick="displayProPlanBlock('segment notifications');" type="hidden"
+                                    name="roles" value="">
+                                <div class="selectedFilterContainer">
+                                    <div class="selectedFilters">
+
+                                        <div class="addFilter">
+                                            <input type="text" data-autocomplete="true" class="filterAdder" id="roles"
+                                                placeholder="Segment filters (multiple filters can be separated by ;semicolons;)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside">
+                        <div class="asideContent">
+
+                            <div class="asideBlock dateContainer">
+                                <h3 class="editorLabel">Publication Date.</h3>
+                                <div class="featureDate editor">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px"
+                                        height="26px" viewBox="0 0 26 26" enable-background="new 0 0 26 26"
+                                        xml:space="preserve">
+                                        <path d="M21.938,3.25H19.5V0.609C19.5,0.274,19.226,0,18.891,0h-0.406c-0.335,0-0.609,0.274-0.609,0.609V3.25h-9.75V0.609
+										C8.125,0.274,7.851,0,7.516,0H7.109C6.774,0,6.5,0.274,6.5,0.609V3.25H4.062c-1.346,0-2.438,1.092-2.438,2.438v17.875
+										C1.625,24.908,2.717,26,4.062,26h17.875c1.346,0,2.438-1.092,2.438-2.438V5.688C24.375,4.342,23.283,3.25,21.938,3.25z M4.062,4.875
+										h17.875c0.447,0,0.812,0.366,0.812,0.812v2.438H3.25V5.688C3.25,5.241,3.616,4.875,4.062,4.875z M21.938,24.375H4.062
+										c-0.447,0-0.812-0.365-0.812-0.812V9.75h19.5v13.812C22.75,24.01,22.385,24.375,21.938,24.375z M9.141,16.25H7.109
+										c-0.335,0-0.609-0.274-0.609-0.609v-2.031C6.5,13.274,6.774,13,7.109,13h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031
+										C9.75,15.976,9.476,16.25,9.141,16.25z M14.016,16.25h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031
+										c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031C14.625,15.976,14.351,16.25,14.016,16.25z
+										 M18.891,16.25h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031
+										c0.335,0,0.609,0.274,0.609,0.609v2.031C19.5,15.976,19.226,16.25,18.891,16.25z M14.016,21.125h-2.031
+										c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031
+										C14.625,20.851,14.351,21.125,14.016,21.125z M9.141,21.125H7.109c-0.335,0-0.609-0.274-0.609-0.609v-2.031
+										c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031C9.75,20.851,9.476,21.125,9.141,21.125z
+										 M18.891,21.125h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031
+										c0.335,0,0.609,0.274,0.609,0.609v2.031C19.5,20.851,19.226,21.125,18.891,21.125z"></path>
+                                    </svg>
+                                    <input type="text" name="date" id="datepicker" class="enclosed" placeholder="Now"
+                                        data-enable-scheduling="false" value="" autocomplete="off">
+                                    <input type="hidden" name="dateEdited" value="false"></input>
+                                </div>
+                            </div>
+                            <div class="asideBlock dateContainer">
+                                <h3 class="editorLabel">Expiration Date. <span class="optional">Optional</span></h3>
+                                <div class="featureDate editor">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px"
+                                        height="26px" viewBox="0 0 26 26" enable-background="new 0 0 26 26"
+                                        xml:space="preserve">
+                                        <path d="M21.938,3.25H19.5V0.609C19.5,0.274,19.226,0,18.891,0h-0.406c-0.335,0-0.609,0.274-0.609,0.609V3.25h-9.75V0.609
+										C8.125,0.274,7.851,0,7.516,0H7.109C6.774,0,6.5,0.274,6.5,0.609V3.25H4.062c-1.346,0-2.438,1.092-2.438,2.438v17.875
+										C1.625,24.908,2.717,26,4.062,26h17.875c1.346,0,2.438-1.092,2.438-2.438V5.688C24.375,4.342,23.283,3.25,21.938,3.25z M4.062,4.875
+										h17.875c0.447,0,0.812,0.366,0.812,0.812v2.438H3.25V5.688C3.25,5.241,3.616,4.875,4.062,4.875z M21.938,24.375H4.062
+										c-0.447,0-0.812-0.365-0.812-0.812V9.75h19.5v13.812C22.75,24.01,22.385,24.375,21.938,24.375z M9.141,16.25H7.109
+										c-0.335,0-0.609-0.274-0.609-0.609v-2.031C6.5,13.274,6.774,13,7.109,13h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031
+										C9.75,15.976,9.476,16.25,9.141,16.25z M14.016,16.25h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031
+										c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031C14.625,15.976,14.351,16.25,14.016,16.25z
+										 M18.891,16.25h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031
+										c0.335,0,0.609,0.274,0.609,0.609v2.031C19.5,15.976,19.226,16.25,18.891,16.25z M14.016,21.125h-2.031
+										c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031
+										C14.625,20.851,14.351,21.125,14.016,21.125z M9.141,21.125H7.109c-0.335,0-0.609-0.274-0.609-0.609v-2.031
+										c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031C9.75,20.851,9.476,21.125,9.141,21.125z
+										 M18.891,21.125h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031
+										c0.335,0,0.609,0.274,0.609,0.609v2.031C19.5,20.851,19.226,21.125,18.891,21.125z"></path>
+                                    </svg>
+                                    <input type="text" name="dueDate" id="datepickerDue" class="enclosed"
+                                        placeholder="Expiration date" data-enable-scheduling="false" value=""
+                                        title="Your post will be removed from your feed on this date"
+                                        autocomplete="off">
+                                    <label for="datepicker" class="timezone">
+
+                                        UTC+05:00
+
+
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="asideBlock">
+                                <h3 class="editorLabel">Categories.</h3>
+
+
+                                <div class="featureCategory">
+
+                                    <div class="selectedCategoryContainer singleCategory">
+                                        <div class="selectedCategories" data-multiple-categories="false">
+
+
+                                            <div class="category categoryNew" data-category="new"
+                                                onclick="showCategorySelector(this);">
+
+                                                <span class="dot category categoryNew"></span>
+
+                                                <span class="name">
+                                                    new
+                                                </span>
+
+                                                <i class="material-icons iconSelect">expand_more</i>
+
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="categorySelector" style="display: none;">
+
+                                            <div class="categorySelectorOption categoryNew" data-value="NEW"
+                                                onclick="otherFeatureCat(this, true);">
+                                                <span class="dot category categoryNew NEW"></span>
+                                                <span class="name">New</span>
+                                            </div>
+
+
+                                            <div class="categorySelectorOption categoryImprovement"
+                                                data-value="IMPROVEMENT" onclick="otherFeatureCat(this, true);">
+                                                <span class="dot category categoryImprovement IMPROVEMENT"></span>
+                                                <span class="name">Improvement</span>
+                                            </div>
+
+
+                                            <div class="categorySelectorOption categoryFix" data-value="FIX"
+                                                onclick="otherFeatureCat(this, true);">
+                                                <span class="dot category categoryFix FIX"></span>
+                                                <span class="name">Fix</span>
+                                            </div>
+
+
+                                            <div class="categorySelectorOption categoryComingSoon"
+                                                data-value="COMINGSOON" onclick="otherFeatureCat(this, true);">
+                                                <span class="dot category categoryComingSoon COMINGSOON"></span>
+                                                <span class="name">Coming Soon</span>
+                                            </div>
+
+
+                                            <div class="categorySelectorOption categoryAnnouncement"
+                                                data-value="ANNOUNCEMENT" onclick="otherFeatureCat(this, true);">
+                                                <span class="dot category categoryAnnouncement ANNOUNCEMENT"></span>
+                                                <span class="name">Announcement</span>
+                                            </div>
+
+
+
+                                            <div class="categorySelectorOption categoryOther add" data-value="OTHER"
+                                                onclick="otherFeatureCat(this, true);">
+                                                <span class="dot">+</span>
+                                                <span class="name">Create custom category</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="categoryContainer" style="display: none;">
+                                        <input type="text" placeholder="Custom Category" class="customCategory"
+                                            onkeyup="updateCustomCategory(event);" />
+                                    </div>
+                                    <div class="CategoryErrorMessage labelError">Must select at least one category</div>
+                                    <div class="customCategoryErrorMessage labelError">Must write a custom category
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="asideBlock">
+                                <h3 class="editorLabel">Post settings.</h3>
+                                <div class="featureOptions">
+                                    <div class="switchbox checked disabled off"
+                                        title="Enable to let your users comment on this post. (Only admins will see the comments)"
+                                        onclick="displayProPlanBlock('user comments', 'feedback');">
+                                        <div class="checker"><i class="material-icons"></i></div>
+                                        <span>Enable comments</span>
+
+                                    </div>
+                                    <div class="switchbox checked disabled off"
+                                        title="Enable to let your users react to this post. (Only admins will see the reactions)"
+                                        onclick="displayProPlanBlock('user reactions', 'feedback');">
+                                        <div class="checker"><i class="material-icons"></i></div>
+                                        <span>Enable reactions</span>
+
+                                    </div>
+
+                                    <div class="switchbox checked on"
+                                        title="Disable this to open links in your post in the current tab.">
+                                        <div class="checker"><i class="material-icons"></i></div>
+                                        <span>Open links in new tab</span>
+                                        <input type="hidden" name="linksInNewWindow" value="true"
+                                            id="linksInNewWindow" />
+                                    </div>
+                                    <div class="switchbox checked on"
+                                        title="Enable this show a quick social media sharing menu on the post.">
+                                        <div class="checker"><i class="material-icons"></i></div>
+                                        <span>Enable social media sharing</span>
+                                        <input type="hidden" name="enableSocialShare" value="true"
+                                            id="enableSocialShare" />
+                                    </div>
+                                    <div class="switchbox checked disabled off"
+                                        title="Show this post first (at the top of the feed)."
+                                        onclick="displayStartupBlock('pinned posts');">
+                                        <div class="checker"><i class="material-icons"></i></div>
+                                        <span>Pin to top of feed</span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <input type="hidden" name="id" value="">
+                    <input type="hidden" name="" value="ENGLISH" id="numberOfLanguages" />
+                    <input type="hidden" name="" value="ENGLISH" id="defaultLanguage" />
+                    <input type="hidden" name="_csrfToken" value="sFU0dNZ2W42MTpE7iLE9A0kX5walO1Mz4nfmlp0K8bY="
+                        id="_csrfToken" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/medium-editor.js"></script>
+    <script src="../assets/js/emoji.js"></script>
+    <script src="../assets/js/jquery.emojis.min.js"></script>
+    <script src="../assets/js/jquery.emojipicker.min.js"></script>
+    <script src="../assets/js/textEditor.js"></script>
+    <script src="../assets/js/edit.js" onload="Creator.init();"></script>
+    <script src="../assets/js/categories.js"></script>
+    <script src="../assets/js/checkDate.js"></script>
+    <script src="../assets/js/modal.js"></script>
+    <script src="../assets/js/filtersAutocomplete.js"></script>
+    <script src="../assets/js/jquery.fileupload.js"></script>
+    <script src="../assets/js/handlebars.runtime.min.js"></script>
+    <script src="../assets/js/jquery-sortable-min.js"></script>
+    <script src="../assets/js/jquery.iframe-transport.js"></script>
+    <script src="../assets/js/medium-editor-insert-plugin.js"></script>
+    <script src="../assets/js/logger.js"></script>
+    <script src="../assets/js/medium-editor-insert-plugin-emoji.js"></script>
+    <script src="../assets/js/templatesToolbar.js"></script>
+    <script src="../assets/js/medium-editor-insert-plugin-templates.js"></script>
+    <script src="../assets/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../assets/js/jquery.validate.min.js"></script>
+    <script src="../assets/js/jquery.oembed.js"></script>
+    <script src="../assets/js/jquery-ui-timepicker-addon.min.js"></script>
+    <script src="../assets/js/moment.min.js"></script>
+    <script src="../assets/js/rangy-core.js"></script>
+    <script type="text/javascript" src="../assets/js/beamer-preview.js"></script>
+    <script type="text/javascript" src="../assets/js/beamer-boosted-embed.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PV5M5FK');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+        var _showBoostedCategory = true;
+        var _snippetPosition = 'bottom-left';
+        var _currentUserName = "Muhammad Ahmad Raza";
+        var _currentUserPosition = "";
+        var _canUseCode = true;
+        var _canUseContributor = false;
+        var _canUseBoostedAnnouncements = false;
+        var _canUseTemplates = false;
+        var _segmentFields = [{ name: 'First name', code: 'first_name', type: 0, visible: true }, { name: 'Last name', code: 'last_name', type: 0, visible: true }, { name: 'Email', code: 'email', type: 0, visible: true }, { name: 'User ID', code: 'custom_id', type: 0, visible: true }, { name: 'First seen', code: 'first_seen_at', type: 4, visible: true }, { name: 'Last seen', code: 'last_seen_at', type: 4, visible: true }, { name: 'Web visits', code: 'web_sessions', type: 2, visible: true }, { name: 'Post clicks', code: 'web_clicks', type: 2, visible: true }, { name: 'Post views', code: 'web_views', type: 2, visible: true }, { name: 'Push clicks', code: 'push_clicks', type: 2, visible: true }, { name: 'Push views', code: 'push_views', type: 2, visible: true }, { name: 'Last NPS score', code: 'last_nps_score', type: 2, visible: true }, { name: 'Browser', code: 'browser', type: 0, visible: true }, { name: 'OS', code: 'os', type: 0, visible: true }, { name: 'City', code: 'city', type: 0, visible: true }, { name: 'Country', code: 'country', type: 0, visible: true }, { name: 'Filters', code: 'segment_filters', type: 0, visible: true }, { name: 'Language', code: 'language', type: 0, visible: true },];
+        var _openBoostedLinks = true;
+        var beamer_config_preview = {
+            product_id: "CSLwjvGZ59482",
+            user_firstname: 'Muhammad',
+            user_lastname: 'Ahmad Raza',
+            user_email: 'ahmadraza@applicon.com',
+            languages: [{ name: 'ENGLISH', code: 'EN' },],
+            alert: false
+        };
+    </script>
+</body>
+
+</html>

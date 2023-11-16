@@ -1,0 +1,1 @@
+var checkDate=function(){var a=document.getElementById("datepicker").value;if("undefined"===typeof a||""==a.trim())return!0;try{if(moment(a,_dateFormat)._isValid)return!0}catch(b){}showModalAlert(a+" is not valid.  Format must be MM/DD/YYYY and the date value must be valid for the calendar.");return!1};

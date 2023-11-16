@@ -143,8 +143,8 @@
                     </div>
                 </a>
 
-                <a href="#" class="tooltippable" data-tooltip-title="Upgrade"
-                    data-tooltip-placement="right" data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <a href="#" class="tooltippable" data-tooltip-title="Upgrade" data-tooltip-placement="right"
+                    data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
                     <div class="menuOption">
                         <i class="material-icons">star</i>
                         <span>Upgrade</span>
@@ -152,8 +152,8 @@
                 </a>
 
 
-                <a href="#" class="tooltippable" data-tooltip-title="Integrations"
-                    data-tooltip-placement="right" data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
+                <a href="#" class="tooltippable" data-tooltip-title="Integrations" data-tooltip-placement="right"
+                    data-tooltip-container=".container.collapsed" data-tooltip-delay="1">
                     <div class="menuOption ">
                         <i class="material-icons">extension</i>
                         <span>Integrations</span>
@@ -358,7 +358,7 @@
                     <a href="#" target="_blank">Upgrade</a>
                     <span class="firstDayOfNextMonth">Next reset: 1st</span>
                 </div>
-                <a href="#" class="button primary addLink createLink" title="Create a new post">
+                <a href="pages/create_post.html" class="button primary addLink createLink" title="Create a new post">
                     <i class="material-icons">add</i><span>Create post</span>
                 </a>
             </div>
@@ -366,7 +366,8 @@
             <div class="sidebar">
                 <div class="sidebarContent">
                     <ul class="sidebarList">
-                        <li class="sidebarListElement hasSublist" data-option="notifications" onclick="toggleOpen(this)">
+                        <li class="sidebarListElement hasSublist" data-option="notifications"
+                            onclick="toggleOpen(this)">
                             <div class="sidebarListElementLabel">
                                 <i class="material-icons">list</i> <span
                                     class="sidebarListElementLabelText">Notifications</span> <span
@@ -454,7 +455,7 @@
                                 <p>Prepare content for your new audience.</p>
                             </div>
                             <div class="checklist-actions">
-                                <a href="#" class="button primary" title="Create a new post">
+                                <a href="pages/create_post.html" class="button primary" title="Create a new post">
                                     Click here to create your first post
                                 </a>
                             </div>
@@ -494,6 +495,9 @@
                             Install Beamer on your site
                         </div>
                     </div>
+                    <div class="button tertiary dismiss" onclick="dismissChangelogOnboarding();" title="Dismiss">
+                        Dismiss
+                    </div>
                 </div>
             </div>
 
@@ -524,8 +528,8 @@
 
 <script>
     function toggleOpen(element) {
-  element.classList.toggle('open');
-}
+        element.classList.toggle('open');
+    }
 </script>
 
 </html>
