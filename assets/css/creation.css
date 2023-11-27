@@ -3481,6 +3481,7 @@ li.selectable>* {
 .sidebarList li.sidebarListElement:not(.hasSublist):hover,.sidebarList li.sidebarListElement.hasSublist .sidebarListElementLabel:hover,.sidebarList li.sidebarListElement.selected,.sidebarList li.sidebarListElement.hasSublist .sidebarSubListElement:hover,.sidebarList li.sidebarListElement.hasSublist .sidebarSubListElement.selected {
     cursor: pointer;
     color: #1c4e80;
+    padding-left: 20px !important;
 }
 
 .sidebarList li.sidebarListElement.hasSublist .sidebarSubListElement.selected {
