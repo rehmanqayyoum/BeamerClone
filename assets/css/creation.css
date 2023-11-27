@@ -3407,7 +3407,8 @@ li.selectable>* {
     padding: 0;
     margin-bottom: 3px;
     border-radius: 100%;
-    float: none
+    float: none;
+    margin-right: 9px;
 }
 
 .categorySelector .categorySelectorOption.add {
@@ -6950,8 +6951,9 @@ body[data-view="add"] .selectedFilter .delete {
 }
 
 body[data-view="add"] .selectedCategoryContainer.singleCategory .categorySelector {
-    width: calc(100%+10px);
-    left: -5px
+    width: 257px !important;
+    left: -5px !important;
+    top: 40px !important;
 }
 
 .selectedFilterContainer {
