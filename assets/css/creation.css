@@ -2518,7 +2518,8 @@ body.mobile .dashboardExtendedSearchField .languageSelector,body.mobile .dashboa
 
 .menuCard .workspace li.option img {
     position: absolute;
-    top: 3px
+    top: 3px;
+    left: 5px !important;
 }
 
 .menuCard .workspace li.option .productName {
