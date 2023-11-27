@@ -6037,6 +6037,9 @@ label.error#nameInput-error {
 body:not(.webkit-scroll):not(.forceScroll),body:not(.webkit-scroll):not(.forceScroll) *,body.embed:not(.webkit-scroll):not(.forceScroll) * {
     scrollbar-width: none
 }
+.tooltip-inner {
+    background-color: transparent !important;
+}
 
 body.embed.webkit-scroll .news,body.embed.webkit-scroll.popup.inapp .feature.fullscreen,body.embed[data-mode=requests] .feature.fullscreen,body.embed[data-mode=roadmap] .feature.fullscreen,body.standalone.webkit-scroll .container {
     overflow-x: hidden!important
