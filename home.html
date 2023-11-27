@@ -11,11 +11,15 @@
 
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="assets/css/perfect-scrollbar.min.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui-timepicker-addon.min.css">
-    <link rel="stylesheet" href="assets/css/highlight-js.css">
-    <link rel="stylesheet" href="assets/css/atom-one-light.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui-timepicker-addon.min.css">
+    <link rel="stylesheet" href="./assets/css/highlight-js.css">
+    <link rel="stylesheet" href="./assets/css/atom-one-light.min.css">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-utilities.css">
 
 </head>
 
@@ -310,7 +314,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="action" data-action="logout">
+                                <a href="./pages/login.html" class="action" data-action="logout" onclick="logout();">
                                     <i class="material-icons">power_settings_new</i> Logout
                                 </a>
                             </li>
@@ -499,6 +503,280 @@
                         Dismiss
                     </div>
                 </div>
+                <div class="feature dashboardSearch empty active">
+                    <div class="dashboardSearchInputContainer">
+                        <div class="dashboardSearchIcon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px"
+                                viewBox="0 0 26 26" enable-background="new 0 0 26 26" xml:space="preserve">
+                                <path d="M23.849,22.147l-5.218-5.217c-0.097-0.099-0.225-0.15-0.365-0.15H17.7c1.354-1.568,2.174-3.609,2.174-5.844
+                                C19.874,6,15.874,2,10.937,2C6,2,2,6,2,10.937c0,4.938,4,8.938,8.937,8.938c2.234,0,4.275-0.82,5.844-2.174v0.565
+                                c0,0.141,0.058,0.269,0.15,0.365l5.217,5.218c0.2,0.201,0.527,0.201,0.73,0l0.971-0.971C24.05,22.675,24.05,22.348,23.849,22.147z
+                                 M10.937,17.812c-3.798,0-6.875-3.076-6.875-6.875c0-3.798,3.077-6.875,6.875-6.875c3.799,0,6.875,3.077,6.875,6.875
+                                C17.812,14.735,14.735,17.812,10.937,17.812z"></path>
+                            </svg>
+                        </div>
+                        <div class="dashboardSearchTagContainer empty">
+                        </div>
+                        <input type="text" name="search" class="dashboardSearchInput" placeholder="Search your feed"
+                            autocomplete="off">
+
+                        <div class="dashboardOpenIcon">
+                            <svg class="clearDashboardSearch" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                </path>
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                            </svg>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px"
+                                viewBox="0 0 26 26" enable-background="new 0 0 26 26" xml:space="preserve">
+                                <path d="M6.464,9.75H19.53c0.904,0,1.356,1.092,0.716,1.731l-6.53,6.536c-0.396,0.396-1.041,0.396-1.437,0l-6.53-6.536
+                                    C5.108,10.842,5.561,9.75,6.464,9.75z"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="dashboardExtendedSearch">
+                        <div class="dashboardExtendedSearchField">
+                            <label for="dateFromSearch">Date from</label>
+                            <div class="dashboardExtendedSearchInput date">
+                                <input type="text" name="dateFrom" class="dateInput hasDatepicker" id="dateFromSearch">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px"
+                                    height="26px" viewBox="0 0 26 26" enable-background="new 0 0 26 26"
+                                    xml:space="preserve">
+                                    <path
+                                        d="M21.938,3.25H19.5V0.609C19.5,0.274,19.226,0,18.891,0h-0.406c-0.335,0-0.609,0.274-0.609,0.609V3.25h-9.75V0.609
+                                        C8.125,0.274,7.851,0,7.516,0H7.109C6.774,0,6.5,0.274,6.5,0.609V3.25H4.062c-1.346,0-2.438,1.092-2.438,2.438v17.875
+                                        C1.625,24.908,2.717,26,4.062,26h17.875c1.346,0,2.438-1.092,2.438-2.438V5.688C24.375,4.342,23.283,3.25,21.938,3.25z M4.062,4.875
+                                        h17.875c0.447,0,0.812,0.366,0.812,0.812v2.438H3.25V5.688C3.25,5.241,3.616,4.875,4.062,4.875z M21.938,24.375H4.062
+                                        c-0.447,0-0.812-0.365-0.812-0.812V9.75h19.5v13.812C22.75,24.01,22.385,24.375,21.938,24.375z M9.141,16.25H7.109
+                                        c-0.335,0-0.609-0.274-0.609-0.609v-2.031C6.5,13.274,6.774,13,7.109,13h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031
+                                        C9.75,15.976,9.476,16.25,9.141,16.25z M14.016,16.25h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031
+                                        c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031C14.625,15.976,14.351,16.25,14.016,16.25z
+                                         M18.891,16.25h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031
+                                        c0.335,0,0.609,0.274,0.609,0.609v2.031C19.5,15.976,19.226,16.25,18.891,16.25z M14.016,21.125h-2.031
+                                        c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031
+                                        C14.625,20.851,14.351,21.125,14.016,21.125z M9.141,21.125H7.109c-0.335,0-0.609-0.274-0.609-0.609v-2.031
+                                        c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031C9.75,20.851,9.476,21.125,9.141,21.125z
+                                         M18.891,21.125h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031
+                                        c0.335,0,0.609,0.274,0.609,0.609v2.031C19.5,20.851,19.226,21.125,18.891,21.125z">
+                                    </path>
+                                </svg>
+                                <div class="inputSeparator">to</div>
+                                <input type="text" name="dateTo" class="dateInput hasDatepicker" id="dp1701097681743">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px"
+                                    height="26px" viewBox="0 0 26 26" enable-background="new 0 0 26 26"
+                                    xml:space="preserve">
+                                    <path
+                                        d="M21.938,3.25H19.5V0.609C19.5,0.274,19.226,0,18.891,0h-0.406c-0.335,0-0.609,0.274-0.609,0.609V3.25h-9.75V0.609
+                                        C8.125,0.274,7.851,0,7.516,0H7.109C6.774,0,6.5,0.274,6.5,0.609V3.25H4.062c-1.346,0-2.438,1.092-2.438,2.438v17.875
+                                        C1.625,24.908,2.717,26,4.062,26h17.875c1.346,0,2.438-1.092,2.438-2.438V5.688C24.375,4.342,23.283,3.25,21.938,3.25z M4.062,4.875
+                                        h17.875c0.447,0,0.812,0.366,0.812,0.812v2.438H3.25V5.688C3.25,5.241,3.616,4.875,4.062,4.875z M21.938,24.375H4.062
+                                        c-0.447,0-0.812-0.365-0.812-0.812V9.75h19.5v13.812C22.75,24.01,22.385,24.375,21.938,24.375z M9.141,16.25H7.109
+                                        c-0.335,0-0.609-0.274-0.609-0.609v-2.031C6.5,13.274,6.774,13,7.109,13h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031
+                                        C9.75,15.976,9.476,16.25,9.141,16.25z M14.016,16.25h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031
+                                        c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031C14.625,15.976,14.351,16.25,14.016,16.25z
+                                         M18.891,16.25h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031
+                                        c0.335,0,0.609,0.274,0.609,0.609v2.031C19.5,15.976,19.226,16.25,18.891,16.25z M14.016,21.125h-2.031
+                                        c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031
+                                        C14.625,20.851,14.351,21.125,14.016,21.125z M9.141,21.125H7.109c-0.335,0-0.609-0.274-0.609-0.609v-2.031
+                                        c0-0.335,0.274-0.609,0.609-0.609h2.031c0.335,0,0.609,0.274,0.609,0.609v2.031C9.75,20.851,9.476,21.125,9.141,21.125z
+                                         M18.891,21.125h-2.031c-0.335,0-0.609-0.274-0.609-0.609v-2.031c0-0.335,0.274-0.609,0.609-0.609h2.031
+                                        c0.335,0,0.609,0.274,0.609,0.609v2.031C19.5,20.851,19.226,21.125,18.891,21.125z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dashboardExtendedSearchField">
+                            <label for="categorySearch">Category</label>
+                            <div class="dashboardExtendedSearchInput">
+                                <input type="text" name="category" id="categorySearch" class="ui-autocomplete-input"
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="dashboardExtendedSearchField">
+                            <label for="filterSearch">Segment filters</label>
+                            <div class="dashboardExtendedSearchInput" id="dashboardFilterSearch">
+                                <input type="hidden" name="role">
+                                <div class="selectedFilterContainer">
+                                    <div class="selectedFilters">
+                                        <div class="addFilter">
+                                            <input type="text" data-autocomplete="true"
+                                                class="filterAdder ui-autocomplete-input" id="filterSearch"
+                                                autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul id="ui-id-1" tabindex="0"
+                                    class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
+                                    unselectable="on" style="display: none;"></ul>
+                            </div>
+                        </div>
+                        <div class="dashboardExtendedSearchField">
+                            <label for="languageSearch">Language</label>
+                            <div class="dashboardExtendedSearchInput" id="dashboardLanguageSearch">
+                                <select class="languageSelector" name="language">
+                                    <option selected="selected" value="">All</option>
+                                    <option value="EN">ENGLISH</>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="dashboardExtendedSearchField">
+                            <label>Status</label>
+                            <div class="dashboardExtendedSearchInput" data-input="switch">
+                                <div class="switchbox binded" title="Search published posts">
+                                    <div class="switch"></div>
+                                    <span>Published</span>
+                                    <input type="hidden" name="published" value="false">
+                                </div>
+                                <div class="switchbox binded" title="Search draft posts">
+                                    <div class="switch"></div>
+                                    <span>Draft</span>
+                                    <input type="hidden" name="draft" value="false">
+                                </div>
+                                <div class="switchbox binded" title="Search expired posts">
+                                    <div class="switch"></div>
+                                    <span>Expired</span>
+                                    <input type="hidden" name="expired" value="false">
+                                </div>
+                                <div class="switchbox binded" title="Search archived posts">
+                                    <div class="switch"></div>
+                                    <span>Archived</span>
+                                    <input type="hidden" name="archived" value="false">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboardExtendedSearchField">
+                            <label>User</label>
+                            <div class="dashboardExtendedSearchInput">
+                                <div class="switchbox binded" title="Search single-user notifications">
+                                    <div class="switch"></div>
+                                    <span>Single-user</span>
+                                    <input type="hidden" name="filterByUser" value="false">
+                                    <!--s:hidden name="filterByUser" value="userSession.filterByUserId != null"/-->
+                                </div>
+                                <input type="text" name="filterByUserId" class="singleUserInput"
+                                    placeholder="User ID (optional)">
+                            </div>
+                        </div>
+                        <div class="dashboardExtendedSearchField submit">
+                            <div class="button secondary clear" onclick="clearSearch('posts');">
+                                Clear
+                            </div>
+                            <div class="button primary" onclick="populateSearchParameters();">
+                                Search
+                            </div>
+                        </div>
+                        <ul id="ui-id-2" tabindex="0"
+                            class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" unselectable="on"
+                            style="display: none;"></ul>
+                    </div>
+                </div>
+                <div id="firstResults">
+                    <div class="feature" id="feature55238553">
+                        <div class="languageTabsContainerBox">
+                            <div class="languageTabsContainer">
+                                <div id="EN55238553Tab" class="languageTab active" data-rtl="false">
+                                    ENGLISH
+                                </div>
+                                <input type="hidden" name="initDisplay" value="default;EN;55238553" id="initDisplay">
+                            </div>
+                        </div>
+                        <div class="fadeout"></div>
+                        <div class="featureDate">
+                            <div class="category categoryNew new">
+                                New
+                            </div>
+                            <div class="date">
+                                November 22, 2023
+                            </div>
+                        </div>
+                        <div class="featureForm" id="EN55238553" style="display: block;">
+                            <div class="featureTitle">
+                                <a href="/edit?id=55238553">
+                                    Snached
+                                </a>
+                            </div>
+                            <div class="featureContent">
+                                <p class="">Snatchers snatched my bag. He has stolen all of my stuff. I am worried now.
+                                    Help me.
+                                    Alaaas am very worried about this. I want to report it right now.</p>
+                            </div>
+                            <div class="featureActionLink">
+                                <a href="http://www.action.com" target="_blank">
+                                    Actions
+                                </a>
+                                <i class="material-icons">chevron_right</i>
+                            </div>
+                        </div>
+
+                        <div class="statisticsContainer">
+                            <div class="statistic">
+                                <a href="analytics?featureId=55238553#views">
+                                    <span class="numberStatistic">0</span><span class="textStatistic"> Total
+                                        views</span>
+                                </a>
+                            </div>
+                            <div class="statistic">
+                                <a href="analytics?featureId=55238553#unique-views">
+                                    <span class="numberStatistic">0</span><span class="textStatistic"> Unique
+                                        views</span>
+                                </a>
+                            </div>
+                            <div class="statistic">
+                                <a href="analytics?featureId=55238553#clicks">
+                                    <span class="numberStatistic">0</span><span class="textStatistic"> Clicks</span>
+                                </a>
+                            </div>
+                            <div class="statistic">
+                                <a href="feedback?showFeatureFeedback=true&amp;featureId=55238553&amp;page=0">
+                                    <span class="numberStatistic">0</span><span class="textStatistic"> Comments</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="editorContainer">
+                            <a onclick="BeamerPreview.show();">
+                                <i class="material-icons" title="Show preview">visibility</i>
+                            </a>
+
+                            <a onclick="displayStartupBlock('pinned posts');"><i class="material-icons pin"
+                                    title="Pin to top of feed">star_border</i></a>
+
+                            <a onclick="confirmClone('55238553')"><i class="material-icons"
+                                    title="Copy this post">content_copy</i></a>
+
+                            <a href="edit?id=55238553"><i class="material-icons"
+                                    title="Edit this post">mode_edit</i></a>
+
+                            <a onclick="showDeleteMenu(this)"><i class="material-icons"
+                                    title="Archive or delete this post">delete</i></a>
+                            <div class="social">
+                                <div class="socialOverlay"></div>
+                                <div class="dropList">
+                                    <ul>
+                                        <li>
+                                            <a onclick="confirmArchive('55238553');" data-action="archive"><i
+                                                    class="material-icons" title="Archive this post">archive</i>
+                                                Archive</a>
+                                        </li>
+
+                                        <li>
+                                            <a onclick="confirmDelete('55238553');" data-action="delete"><i
+                                                    class="material-icons" title="Delete this post">delete</i>
+                                                Delete</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -525,6 +803,11 @@
 <script src="assets/js/tooltip.js"></script>
 <script src="assets/js/tooltipUtils.js"></script>
 <script src="assets/js/md5.min.js"></script>
+
+<!------- Bootstrap Js Files ------->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
 
 <script>
     function toggleOpen(element) {
